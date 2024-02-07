@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.abspath('./_ext'))
 
 sys.path.append(os.path.abspath("./_ext"))
 
-# extensions = ['sphinx_panels', 'sphinxcontrib.matla', 'sphinx.ext.extlinks', 'sphinx_tabs.tabs']
+# extensions = ['sphinx_panels', 'sphinxcontrib.matlab', 'sphinx.ext.extlinks', 'sphinx_tabs.tabs']
 extensions = ['sphinx_design', 'sphinx.ext.extlinks', 'sphinx_tabs.tabs']
 # , "sphinx_design"
 myst_enable_extensions = ["colon_fence"]
