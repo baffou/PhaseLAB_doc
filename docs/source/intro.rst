@@ -4,7 +4,9 @@ Introduction
 What are QLSI and CGM?
 ----------------------
 
-**QLSI (quadriwave lateral shearing interferometry)** is an optical imaging technique capable of mapping both the intensity and the wavefront profile of a light beam.\ [#ACSP10_322]_ Here are for instance intensity and wavefront images of a Bessel-like beam:
+**QLSI (quadriwave lateral shearing interferometry)** is an optical imaging technique capable of mapping both the intensity and the wavefront profile of a light beam.\ [#ACSP10_322]_
+
+Here are for instance intensity and wavefront images of a Bessel-like beam:
 
 .. image:: images/QLSIimages.png
    :width: 400
@@ -29,10 +31,24 @@ Such an association gives rise to a modified image of the camera, called an inte
 
 |br|
 
-When a :abbr:`QLSI (quadriwave lateral shearing interferometry)` system is implemented in an optical microscope, the measured wavefront becomes the optical path difference (OPD) created by the micrometric object placed at the sample plane. This configuration is usually referred as **cross-grating wavefront microscopy (CGM)**.
+When a :abbr:`QLSI (quadriwave lateral shearing interferometry)` system is implemented in an optical microscope, the measured wavefront becomes the optical path difference (OPD) created by the micrometric object placed at the sample plane. This configuration is usually referred as **cross-grating wavefront microscopy (CGM)**. Here are some examples of objects that have been imaged using CGM, and processed using |PhaseLAB|:
 
-The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave lateral shearing interferometry)` images. It enables the processing of the interferogram into intensity and wavefront images, but also the simulations of interferograms, intensity, wavefront and :abbr:`OPD (optical path difference)` images from model objects, such as nanoparticles.
+.. image:: images/QLSIoverview.png
+   :width: 600
+   :align: center
 
+|br|
+
+
+
+The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave lateral shearing interferometry)` images. It enables the processing of the interferogram into intensity and wavefront images, but also the simulations of interferograms, intensity, wavefront and :abbr:`OPD (optical path difference)` images from model objects, such as nanoparticles. Here is a review on CGM and QLSI:
+
+.. figure:: images/CGMreviewCover.png
+   :width: 200
+   :align: center
+   :target: http://guillaume.baffou.com/publications/063-Baffou-ACSPhotonics.pdf
+
+|br|
 
 
 .. [#ACSP10_322] *Wavefront microscopy using quadriwave lateral shearing interferometry: from bioimaging to nanophotonics*, G. Baffou, **ACS Photonics** 10, 322-339 (2023)
