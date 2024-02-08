@@ -37,6 +37,18 @@ The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave 
 
 .. [#ACSP10_322] *Wavefront microscopy using quadriwave lateral shearing interferometry: from bioimaging to nanophotonics*, G. Baffou, **ACS Photonics** 10, 322-339 (2023)
 
+How to setup CGM experimentally?
+---------------------------------
+
+There exist commercial QLSI cameras. All of them can be easily implemented in a microscope to perform CGM experiments. Here is for instance a movie of U2OS living cells acquired with the `Makatea camera <https://www.silios.com/wavefront-imaging>` from Silios Technology, and processed with |PhaseLAB|:
+
+.. raw:: html
+
+   <video width="512" height="512" autoplay loop muted>
+      <source src="http://guillaume.baffou.com/movies/U2OS_low.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+   </video>
+
 
 The 3 main functionalities of |PhaseLAB|
 ----------------------------------------
