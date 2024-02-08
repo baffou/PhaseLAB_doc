@@ -40,7 +40,7 @@ The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave 
 How to setup CGM experimentally?
 ---------------------------------
 
-There exist commercial QLSI cameras. All of them can be easily implemented in a microscope to perform CGM experiments. Here is for instance a movie of U2OS living cells acquired with the `Makatea camera <https://www.silios.com/wavefront-imaging>` from Silios Technology, and processed with |PhaseLAB|:
+There exist commercial QLSI cameras. All of them can be easily implemented in a microscope to perform CGM experiments. Here is for instance a movie of U2OS living cells acquired with the `Makatea camera <https://www.silios.com/wavefront-imaging>`_ from Silios Technology, and processed with |PhaseLAB|:
 
 .. raw:: html
 
@@ -48,6 +48,8 @@ There exist commercial QLSI cameras. All of them can be easily implemented in a 
       <source src="http://guillaume.baffou.com/movies/U2OS_low.mp4" type="video/mp4">
       Your browser does not support the video tag.
    </video>
+
+|gr| U2OS cells. ©cnrs, `Makatea camera <https://www.silios.com/wavefront-imaging>`_ from SILIOS Technologies |/gr|
 
 
 The 3 main functionalities of |PhaseLAB|
