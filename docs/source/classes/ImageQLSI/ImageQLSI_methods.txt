@@ -33,6 +33,8 @@ ImageQLSI methods
 
 .. include:: /classes/ImageMethods/methods/lambda.rst
 
+.. include:: /classes/ImageMethods/methods/level0.rst
+
 .. include:: /classes/ImageMethods/methods/MakeMoviedx.rst
 
 .. include:: /classes/ImageQLSI/methods/mean.rst
