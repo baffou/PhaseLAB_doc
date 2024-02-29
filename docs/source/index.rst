@@ -12,6 +12,10 @@
 
 |PhaseLAB|  is a Matlab toolbox aimed at dealing with quantitative phase images. It has been developed by Guillaume Baffou, CNRS research scientist at the Fresnel Institute (Marseille, France).
 
+PhaseLAB is licensed under the Creative Commons Attribution-NonCommercial (CC BY-NC) license. This means you are free to use, share, and modify the software, but only for non-commercial purposes.
+
+By using this software, you agree to abide by the terms of the CC BY-NC license. If you have any questions about the license or its terms, please refer to the accompanying license file or contact us for clarification.
+
 The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baffou/PhaseLAB>`_.
 
 .. panels::
