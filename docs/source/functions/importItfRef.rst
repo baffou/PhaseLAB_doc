@@ -39,6 +39,20 @@ Line 1 imports the images 1, 10 and all the images from 20 to 50, while line 2 i
 
 |hr|
 
+If the computer has got an NVidia card, one can use gpuArray variables instead of simple double matrices to accelerate the image processing.
+
+.. code-block:: matlab
+
+    Itf = importItfRef(folder, MI, 'gpu', true);
+    Itf = importItfRef(folder, MI, 'remote', true, 'gpu', true);
+
+Line 1 saves the interferogram matrices in the graphics card. Line 2 does not save anything, because it specifies a remote location of the interferograms on the hard drive. However, when the matrices are called using ``Itf.Itf``, they are stored in the graphic card.
+
+When further using :ref:`the QLSIprocess method <The_QLSIprocess_method>`, The ImageQLSI objects will also contrain gpuArrays.
+
+
+|hr|
+
 
 Finally, it is common to have several series of images within the same folder. For instance, when using |PhaseLIVE|, one can choose a prefix for the saved images. Here is a list of interferograms, all saved in the same folder, where the prefixes were successively *ITF* and *ITF2*:
 

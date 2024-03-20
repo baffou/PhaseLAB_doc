@@ -68,6 +68,19 @@ Constructor
             
             Itf.Reference(Ref);       % associates the reference
 
+    .. dropdown:: **Use GPU**
+
+        .. code-block:: matlab
+
+            MI = Microscope(100);     % creates a microscope with 100x magnification
+            
+            Itf = Interfero('data/Itf.tif', MI, 'gpu', true); % creates the Interfero object
+            Ref = Interfero('data/Ref.tif'; MI, 'gpu', true); % creates the reference Interfero object
+            
+            Itf.Reference(Ref);       % associates the reference
+        
+        In this example, the ``Itf`` properties are stored in the graphics card, for further GPU computation.
+
     .. dropdown:: **Automatic import from a folder**
 
         Usually to build Interfero objects, the constructor is not directly used. One often automatically import interferograms from a folder using :ref:`The_importItfRef_function`.
