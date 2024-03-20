@@ -65,7 +65,7 @@ There exist commercial QLSI cameras. All of them can be easily implemented in a 
       Your browser does not support the video tag.
    </video>
 
-|gr| U2OS cells|/gr|
+|gr| U2OS cells |/gr|
 
 
 The 3 main functionalities of |PhaseLAB|
