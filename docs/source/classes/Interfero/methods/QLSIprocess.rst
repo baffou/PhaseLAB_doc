@@ -179,9 +179,7 @@
     | **Name**: :matlab:`"unwrap"`
     | |gr| **Value**: |c| false |/c|  (default) \| |c| true |/c|
 
-    Uses an unwrapping algorithm. Not useful in most cases. Slows down a bit the image processing.
-
-
+    Uses an unwrapping algorithm. Not useful in most cases. Slows down a bit the image processing. Algo based on this `Matlab package <https://www.mathworks.com/matlabcentral/fileexchange/68493-robust-2d-phase-unwrapping-algorithm>`_.
 
 
 
