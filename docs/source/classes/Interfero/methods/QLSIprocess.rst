@@ -26,7 +26,8 @@
                 "auto", true, ...   % Find automatically the spot of highest intensity
                 "noRef", false, ... % Do not consider the Ref interferogram to compute the DW and OPD images
                 "CGdistanceList", [], ...
-                "resetCrops",  false );
+                "resetCrops",  false, ...
+                "unwrap", false);
         
 
     .. raw:: html
@@ -172,6 +173,14 @@
     | |gr| **Value**: |c| false |/c|  (default) \| |c| true |/c|
 
     Resets the crops between each processed interferogram, to make sure the algorithm enables the user to click for each image when ``"auto = false"``.
+
+    |hr|
+
+    | **Name**: :matlab:`"unwrap"`
+    | |gr| **Value**: |c| false |/c|  (default) \| |c| true |/c|
+
+    Uses an unwrapping algorithm. Not useful in most cases. Slows down a bit the image processing.
+
 
 
 
