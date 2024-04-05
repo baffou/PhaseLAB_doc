@@ -13,10 +13,15 @@ Constructor
         obj = Dipole();
         obj = Dipole(mat, radius);
         obj = Dipole(mat, radius, z);
+        obj = Dipole(alpha, radius, z); % alpha is a scalar or a 3-vector
+        obj = Dipole(eps, radius, z);     % n is a scalar or a 3-vector
 
         % examples
         obj = Dipole('Au', 20e-9);
-        obj = Dipole('SiO2', 50e-9', 200e-9);
+        obj = Dipole('SiO2', 50e-9, 200e-9);
+        obj = Dipole((-1.5 + 1i*3.5)*1e-21, 50e-9, 200e-9);
+        obj = Dipole(1.5^2, 50e-9, 200e-9);
+        obj = Dipole([1.5 1.3 1.3].^2, 50e-9, 200e-9);
 
     .. raw:: html
         
@@ -31,4 +36,14 @@ Constructor
 
     |hr|
 
-    :matlab:`obj = Dipole(mat, radius, z)` creates a *Dipole* object that corresponds to a nanosphere of radius ``radius`` and material ``mat``, shited to the position ``z`` along the :math:`z` axis.
+    :matlab:`obj = Dipole(mat, radius, z)` creates a *Dipole* object that corresponds to a nanosphere of radius ``radius`` and material ``mat``, shifted to the position ``z`` along the :math:`z` axis.
+
+    |hr|
+
+    :matlab:`obj = Dipole(alpha, radius, z)` creates a *Dipole* object that corresponds to a nanosphere of radius ``radius`` and a polarizability ``alpha``, shifted to the position ``z`` along the :math:`z` axis. The radius is ignored in the simulations when directly specifying ``alpha`` this way. ``alpha`` can be a 3-vector, represented the polarizabilities along the ``x``, ``y``, and ``z`` directions of space, in the case of an anisotropic dipole.
+
+    |hr|
+
+    :matlab:`obj = Dipole(eps, radius, z)` creates a *Dipole* object that corresponds to a nanosphere of radius ``radius`` and a permittivity ``alpha``, shifted to the position ``z`` along the :math:`z` axis. The radius is ignored in the simulations when directly specifying the permittivity this way. ``alpha`` can be a 3-vector, representing the three permittivities along the ``x``, ``y``, and ``z`` directions of space, in the case of a birefringent material.
+    
+    The class makes the distinction between the permittivity and the polarizability thanks to the different ranges of values (on the order of 1e-21 in the case of polarisabilities, and on the order of 1 in the case of relative permittivities.)
