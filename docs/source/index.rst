@@ -89,6 +89,7 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     imaging        <functions/imaging>
     importItfRef   <functions/importItfRef>
     dynamicFigure  <functions/dynamicFigure>
+    dynamicMovie  <functions/dynamicMovie>
 
 
 

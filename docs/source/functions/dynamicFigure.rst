@@ -49,7 +49,11 @@ to display the wavefront gradients as well.
 
 To display a figure full screen, append the command::
 
-    fullScreen
+    fullscreen
+
+To display a figure over the full screen width, append the command::
+
+    fullwidth
 
 
 One can also use this function to display interferograms (main and reference):
@@ -61,4 +65,23 @@ One can also use this function to display interferograms (main and reference):
     linkAxes
     fullscreen
 
-This function also work if ``IM`` of ``Itf`` in an object array. In this, case the first object of the series is primarily displayed, and then, by pressing the right-arrow or left-arrow keys, one can navigate to the next or previous images.
+One can add the :matlab:`"titles"` keyword to enter titles to be displayed on top of each image:
+
+.. code-block:: matlab
+    :linenos:
+    
+    dynamicFigure('gb',QLSI{1},'gb',{QLSI{1}.DWx},'gb',{QLSI{1}.DWy}, ...
+         "titles",{'OPD','DWx','DWy'})
+    linkAxes
+
+
+.. figure:: /images/displayFigureTitles.png
+   :width: 800
+   :align: center
+
+
+.. note::
+    Importantly, this function also works if ``IM`` or ``Itf`` in an object *array*. In this case, the first object of the series is primarily displayed, and then, by pressing the right-arrow or left-arrow keys, one can navigate to the next or previous images.
+
+
+
