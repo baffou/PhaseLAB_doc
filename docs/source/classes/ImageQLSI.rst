@@ -9,7 +9,6 @@ Properties
 ----------
 
 
-
 .. list-table:: Public properties
     :widths: 30 30 30 100 
     :header-rows: 1
@@ -28,7 +27,7 @@ Properties
       - 
       - Illumination object
     * - ``comment``
-      - char
+      - *char*
       - 
       - Any comment on the image
 
@@ -44,31 +43,38 @@ Properties
       - type
       - description
     * - ``T``
-      - double array
+      - *double* array
       - Intensity image
     * - ``OPD``
-      - double array
+      - *double* array
       - OPD image
     * - ``DWx``
-      - double array
+      - *double* array
       - OPD gradient along *x*
     * - ``DWy``
-      - double array
+      - *double* array
       - OPD gradient along *y*
+
+
+.. list-table:: Dependent properties
+    :widths: 30 30 100 
+    :header-rows: 1
+    :align: center
+
     * - name
       - type
       - description
     * - ``OPDnm``
-      - double array
+      - *double* array
       - OPD in nm
     * - ``Ph``
-      - double array
+      - *double* array
       - Phase image
     * - ``Nx``
-      - double
+      - *double*
       - Number of columns
     * - ``Ny``
-      - double
+      - *double*
       - Number of rows
 
 

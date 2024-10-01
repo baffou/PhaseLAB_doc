@@ -1,0 +1,48 @@
+
+
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+      
+        <p class="title">Synthax</p>
+
+    .. code-block:: matlab
+
+        % prototypes
+        Medium(n)
+        Medium(n, nS)
+        Medium(mat)
+        Medium(mat,matS)
+                
+        % examples
+        Medium(1.5)
+        Medium(1.33, 1.5)
+        Medium('water','glass')
+        Medium('air','BK7')
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    :matlab:`Medium(n)` creates a |Medium| object representing a uniform medium of refractive index *n*.
+
+    |hr|
+
+    :matlab:`Medium(n, nS)` creates a |Medium| object representing a system composed of two semi-infinite media separated by a planar interface, the top one with a refractive index *n* and the second one with *nS* (*S* for substrate).
+
+    |hr|
+
+    Instead of specifying the refractice indices, one can specify medium names. The known materials and the associated values are the following:
+
+    - ``glass``: 1.51
+    - ``BK7``: 1.51
+    - ``water``: 1.33
+    - ``air``:  1.0
+
+
+
+

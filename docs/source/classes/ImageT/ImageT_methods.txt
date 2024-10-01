@@ -1,0 +1,4 @@
+ImageT methods
+--------------
+
+.. include:: /classes/ImageT/methods/figureT.rst

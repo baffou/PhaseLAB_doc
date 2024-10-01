@@ -1,0 +1,10 @@
+
+Medium methods
+--------------
+
+.. include:: /classes/Medium/methods/display.rst
+
+
+
+
+ 

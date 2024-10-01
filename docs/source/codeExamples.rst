@@ -21,5 +21,7 @@ Code examples
 
 .. include:: /codeExamples/colorImaging.rst
 
+.. include:: /codeExamples/temperatureProcessing.rst
+
 
 

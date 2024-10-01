@@ -53,6 +53,7 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     displayImages
     inSilico
     multiChannelImaging
+    TemperatureProcessing
 
 .. toctree::
     :maxdepth: 2
@@ -77,7 +78,10 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     Illumination <classes/Illumination>
     ImageEM    <classes/ImageEM>
     ImageQLSI    <classes/ImageQLSI>
+    ImageT    <classes/ImageT>
     Interfero    <classes/Interfero>
+    Medium   <classes/Medium>
+    MediumT   <classes/MediumT>
     Microscope   <classes/Microscope>
     Objective   <classes/Objective>
 

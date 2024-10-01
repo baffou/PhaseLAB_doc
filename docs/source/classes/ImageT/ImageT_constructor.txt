@@ -1,0 +1,40 @@
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+        
+        <p class="title">Synthax</p>
+
+    .. code-block:: matlab
+        :class: custom-code
+
+        obj = ImageT()
+        obj = ImageT(W, TMP, H)
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    ``obj = ImageT()`` creates an empty *ImageT* object.
+
+    |hr|
+
+    ``obj = ImageT(W, TMP, H)`` creates an *ImageT* object, ``W`` defining the OPD image, ``TMP`` the temperature image, and ``H`` the heat source density image. Each of these inputs is optional.
+    
+
+    .. raw:: html
+            
+        <p class="title">Examples</p>
+    
+    .. dropdown:: **Build an ImageT object by importing data**
+
+        .. code-block:: matlab
+
+        T = readMatrix('data/T.txt');
+        W = readMatrix('data/W.txt');
+
+        IM = ImageT(T, W); % creates the ImageT object
+

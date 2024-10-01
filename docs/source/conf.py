@@ -128,11 +128,17 @@ rst_prolog = """
 
 .. |ImageQLSI| replace:: :ref:`ImageQLSI <The_ImageQLSI_class>`
 
+.. |ImageT| replace:: :ref:`ImageT <The_ImageT_class>`
+
 .. |Interfero| replace:: :ref:`Interfero <The_Interfero_class>`
 
 .. |Microscope| replace:: :ref:`Microscope <The_Microscope_class>`
 
 .. |Objective| replace:: :ref:`Objective <The_Objective_class>`
+
+.. |Medium| replace:: :ref:`Medium <The_Medium_class>`
+
+.. |MediumT| replace:: :ref:`MediumT <The_Medium_class>`
 
 
 .. |importItfRef| replace:: |c| :ref:`importItfRef <The_importItfRef_function>` |/c|

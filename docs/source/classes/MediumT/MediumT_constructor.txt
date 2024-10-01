@@ -1,0 +1,46 @@
+
+
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+      
+        <p class="title">Synthax</p>
+
+    .. code-block:: matlab
+
+        % prototypes
+        MediumT(material,h)
+        MediumT(material,h,m_p)
+        MediumT(material,h,m_p,mesh_Npx)
+                
+        % examples
+        MediumT('water', 1e-3)
+        MediumT('glass', 0.1e-3, 'progressive')
+        MediumT('water', 1e-3, 'regular', 200)
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    :matlab:`MediumT(material,h)` creates a |MediumT| object representing a material layer of thickness ``h``.
+
+    |hr|
+
+    :matlab:`MediumT(material,h,m_p)` creates a |MediumT| object representing a material layer of thickness ``h``, and specify that the discretization in *z* of the layer will be performed using an ``m_p`` method. ``m_p`` must equal either ``regular`` or ``progressive``. Regular creates a uniform mesh, with an increment that equals the pixel size of the image. ``progressive`` is to be used with thick layer, for which the regular distribution would lead too large a mesh, and too long computation time. It meshes finely the proximity of the interface and roughly further away.
+
+    |hr|
+
+    :matlab:`MediumT(material,h,m_p,mesh_Npx)`. Same as above where the number of mesh points is not automatic, but specified by ``mesh_Npx``.This value can be lower than the automatic one as a means to make the temperature computation faster.
+
+
+    |hr|
+
+    To create a full system, several |Medium| objects have to be assembled, as an array, as many as the number of layers in the system (i.e. 2 or 3). Once the |Medium| array ``Med`` is created, the mesh is computed using the command 
+
+    .. code-block:: matlab
+        
+        Med = mesher(Med,MI);

@@ -61,6 +61,8 @@ ImageQLSI methods
 
 .. include:: /classes/ImageQLSI/methods/square.rst
 
+.. include:: /classes/ImageQLSI/methods/TMPprocess.rst
+
 .. include:: /classes/ImageQLSI/methods/untilt.rst
 
 .. include:: /classes/ImageQLSI/methods/write.rst

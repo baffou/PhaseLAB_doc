@@ -27,6 +27,7 @@
                 "noRef", false, ... % Do not consider the Ref interferogram to compute the DW and OPD images
                 "CGdistanceList", [], ...
                 "resetCrops",  false, ...
+                "display",  false, ...  % display the crops, even when automatic
                 "unwrap", false);
         
 
@@ -133,7 +134,7 @@
 
     |hr|
 
-    | **Name**: :matlab:`"Tnormalization"`
+    | **Name**: :matlab:`"Tnormalisation"`
     | |gr| **Value**: |c| true |/c|  (default) \| |c| false |/c| \| |c| 'subtraction' |/c|
 
     Sets the way the intensity image is normalized. By default, it is divided by the intensity image of the reference image. To avoid that, one can set the value to ``false``. One can also choose to normalize by *subtracting* the intensity image of the reference, using the value ``'subtraction'`` (relevant when working with fluorescence images for instance).
