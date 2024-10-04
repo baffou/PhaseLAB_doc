@@ -14,8 +14,8 @@
       
         <p class="title">Description</p>
 
-    The method overload the operator ``+`` by defining the method ``plus``. It actually adds the two interferograms ``obj1.Itf`` and ``obj2.Itf`` and stores the result in attribue ``Itf`` of the output ``obj``. It does the same for the references  ``obj1.Ref.Itf`` and ``obj2.Ref.Itf``.
+    The method overloads the operator ``+`` by defining the method ``plus``. It actually adds the two interferograms ``obj1.Itf`` and ``obj2.Itf`` and stores the result in the ``Itf`` properties of the output ``obj``. It does the same for the references  ``obj1.Ref.Itf`` and ``obj2.Ref.Itf``.
 
     |hr|
 
-    The method also work with several additions at a time: ``obj = obj1 + obj2 + ... + objN;``
+    The method also works with several additions at a time: ``obj = obj1 + obj2 + ... + objN;``

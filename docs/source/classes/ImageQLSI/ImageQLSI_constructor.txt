@@ -46,18 +46,18 @@ Constructor
             
         <p class="title">Examples</p>
     
-    .. dropdown:: **Build an ImageQLSI object by importing data**
+    .. dropdown:: **Build an ImageQLSI object by importing data*
 
         .. code-block:: matlab
 
-        T = readMatrix('data/T.txt');
-        W = readMatrix('data/W.txt');
+            T = readMatrix('data/T.txt');
+            W = readMatrix('data/W.txt');
 
-        MI = Microscope(100);         % creates a microscope with 100x magnification
-        IL = Illumintation (530e-9);  % creates an illumination at lambda = 530 nm
+            MI = Microscope(100);         % creates a microscope with 100x magnification
+            IL = Illumintation (530e-9);  % creates an illumination at lambda = 530 nm
 
-        IM = ImageQLSI(T, W, MI, IL); % creates the ImageQLSI object
-        
+            IM = ImageQLSI(T, W, MI, IL); % creates the ImageQLSI object
+            
 
 
 
@@ -67,7 +67,7 @@ Constructor
     
     .. note::
         
-        Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where Name is the argument name and Value is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
+        Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where ``Name`` is the argument name and ``Value`` is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
 
         Example: :matlab:`ImageQLSI(___,'remotePath','images/data')`
     

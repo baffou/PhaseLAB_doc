@@ -32,7 +32,7 @@
     
     .. raw:: html
       
-        <p class="title">Examples</p>
+        <p class="title">Example</p>
     
     .. include:: /codeExamples/numericalRefocusing.rst
 

@@ -13,8 +13,6 @@
         <p class="title">Description</p>
 
     ``obj.clearFcrops()`` resets the value of ``obj.Ref.Fcrop``.
-
-    ``obj.clearFcrops(val)`` remove ``val``, which can be a number, or a matrix of the same size as ``Itf``.
     
     |hr|
 

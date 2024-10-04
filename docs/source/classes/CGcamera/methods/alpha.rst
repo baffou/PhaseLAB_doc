@@ -1,4 +1,4 @@
-.. dropdown:: **alpha** |subTitle| Compute the alpha value of the QLSI camera system. |/subTitle|
+.. dropdown:: **alpha** |subTitle| Computes and returns the alpha value of the QLSI camera system. |/subTitle|
 
     .. raw:: html
       

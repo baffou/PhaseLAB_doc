@@ -35,11 +35,11 @@
       
         <p class="title">Description</p>
 
-    Method of the class *Interfero* that transforms the interferograms into intensity and wavefront images. As aa second input, the illumination must be specified.
+    Method of the class *Interfero* that transforms the interferograms into intensity and wavefront images. As a second input, the illumination must be specified.
 
     |hr|
 
-    The method also work with a *Interfero* array, and returns an *ImageQLSI* array: :matlab:`ImList = QLSIprocess(ItfList, IL);`
+    The method also works with an *Interfero* array, and returns an |ImageQLSI| array: :matlab:`ImList = QLSIprocess(ItfList, IL);`
 
     .. raw:: html
       
@@ -79,9 +79,9 @@
     | **Name**: :matlab:`"defintion"`
     | |gr| **Value**: |c| 'high' |/c|  (default) \| |c| 'low' |/c| |/gr|
 
-    Tells whether the process gives high definition of low definition images.
+    Tells whether the process gives high definition or low definition images.
 
-    | **High definition**: the intensity and wavefront images have the same number of pixels as the interferogram
+    | **High definition**: the intensity and wavefront images have the same number of pixels as the interferogram.
     | **Low definition**: the width and height of the intensity and wavefront images are reduced by a factor :math:`\zeta` (zeta), that is the size of the grating unit size in camera dexels (usually, :math:`\zeta=3`).
 
     There is neither more information nor more spatial resolution in the high-definition images. However, the images look much better in this mode. Here is an example of high versus low definition images:

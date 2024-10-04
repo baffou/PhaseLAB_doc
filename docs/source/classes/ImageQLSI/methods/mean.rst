@@ -13,4 +13,4 @@
       
         <p class="title">Description</p>
 
-    Average the ``OPD`` and ``T`` images of a list of *ImageQLSI* objects ``objList``, aand retur a newn single *ImageQLSI* object with these averaged images.
+    Averages the ``OPD`` and ``T`` images of a list of |ImageQLSI| objects ``objList``, and returns a new single |ImageQLSI| object with these averaged images.

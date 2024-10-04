@@ -29,7 +29,7 @@ In Silico simulation
         % model the experimental interferogram
         Itf = CGMinSilico(IM0,'shotNoise',true);
 
-        % processin the in Silico images
+        % processing the in Silico images
         IM = QLSIprocess(Itf,IL);
 
         % display the theoretical and in Silico images

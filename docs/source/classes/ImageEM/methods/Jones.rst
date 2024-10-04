@@ -39,7 +39,7 @@
         E_y
         \end{bmatrix}
 
-    :math:`[a, b; c, d]` is the Jones matrix. For instance, for a polarizer along the *x* axis, it reads
+    :math:`[a, b; c, d]` is the Jones matrix. For instance, for a polarizer along the :math:`x` axis, it reads
 
     .. math::
         
@@ -49,7 +49,7 @@
         0 & 0
         \end{bmatrix}
 
-    For a half wave plate with fast axis along *x*, it reads
+    For a half wave plate with fast axis along :math:`x`, it reads
 
     .. math::
         
@@ -72,13 +72,13 @@
 
     |hr|
 
-    ``obj = obj0.Jones([a, b; c, d]);`` applies the Jones matrix to every pixel of the E field, and incident E field of the *ImageEM* object.
+    ``obj = obj0.Jones([a, b; c, d]);`` applies the Jones matrix to every pixel of the E field, and incident E field of the |ImageEM| object.
 
     |hr|
 
     ``obj = obj0.Jones(Name, Value);`` applies the optical component ``Name`` placed at an angle ``Value``. Several name-value pairs can be used: ``Name1 = Value1, ..., NameN = ValueN``. They will be applied to the images in the order they are specified.
     
-    Here are the possible ``'Name'``:
+    Here are the possible :matlab:`'Name'` keywords:
 
     - :matlab:`'P'`
 

@@ -13,7 +13,6 @@ Constructor
         obj = ImageT()
         obj = ImageT(W, TMP, H)
 
-
     .. raw:: html
         
         <div class="title">Description</div>
@@ -33,8 +32,8 @@ Constructor
 
         .. code-block:: matlab
 
-        T = readMatrix('data/T.txt');
-        W = readMatrix('data/W.txt');
+            T = readMatrix('data/T.txt');
+            W = readMatrix('data/W.txt');
 
-        IM = ImageT(T, W); % creates the ImageT object
+            IM = ImageT(T, W); % creates the ImageT object
 

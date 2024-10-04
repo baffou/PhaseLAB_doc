@@ -13,7 +13,7 @@
       
         <p class="title">Description</p>
 
-    This method displays the properties of a |Medium| object in the nice way:
+    This method displays the properties of a |Medium| object in a nice way:
    
 
     .. code-block:: matlab

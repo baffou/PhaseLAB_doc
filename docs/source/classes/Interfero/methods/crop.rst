@@ -57,5 +57,5 @@
 
     - :matlab:`'params'`
 
-        One can also direclty write the coordinates of the crops, using :matlab:`crop(___,'params', [x1, x2, y1, y2])`. In this case, no figure opens.
+        One can also direclty write the coordinates of the crops, using :matlab:`crop(___,'params', [x1, x2, y1, y2])`. In this case, no figure pops up.
 

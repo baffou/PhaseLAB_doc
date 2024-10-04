@@ -22,7 +22,7 @@
 
     |hr|
 
-    If only one output ``obj`` is specified, then the output consist of a 2-column array of |Interfero| objects, one column for each color.
+    If only one output ``obj`` is specified, then the output consists of a 2-column array of |Interfero| objects, one column for each color.
 
     |hr|
 

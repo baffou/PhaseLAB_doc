@@ -16,11 +16,11 @@
       
         <p class="title">Description</p>
 
-    ``obj.level0()`` adjusts the offset of the image. More precisely. asks for an area on the image, the average value of which is zero. The method applies an offset to the whole image to satifies this condition. Many options can be speficy to tell how this area is selected. See below.
+    ``obj.level0()`` adjusts the offset of the image. More precisely. This method asks for an area on the image, the average value of which should be zero. The method applies an offset to the whole image to satifies this condition. Many options can be specified to tell how this area is selected. See below.
 
     |hr|
 
-    Objects *vectors* can also be used with this method. The transformation applies then to all the objects of the vector.
+    Object *vectors* can also be used with this method. The transformation applies then to all the objects of the vector, with the same reference area.
 
     |hr|
 
@@ -62,7 +62,7 @@
 
         One can also direclty write the coordinates of the area, using :matlab:`level0(___,'params', [x1, x2, y1, y2])`. In this case, no figure opens.
 
-    Here is an example of a code that manually ajust the offsetof a first object, and applies automatically the same adjustment to a second object:
+    Here is an example of a code that manually ajusts the offset of a first object, and applies automatically the same adjustment to a second object:
 
     .. code-block:: matlab
 

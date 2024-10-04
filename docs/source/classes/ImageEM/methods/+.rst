@@ -14,7 +14,7 @@
       
         <p class="title">Description</p>
 
-    The method overloads the operator ``+`` by defining the method ``plus``. It simply sums the electromagnetic field associated to the 2 *ImageEM* objects. Note that it also sums the incident fields. It is relevant to use when the sample is illuminated at the same time with different plane waves at different angles for instance.
+    The method overloads the operator ``+`` by defining the method ``plus``. It simply sums the electromagnetic fields associated to the 2 *ImageEM* objects. Note that it also sums the incident fields. It is relevant to use when the sample is illuminated at the same time with different plane waves at different angles for instance.
 
     .. warning::
 

@@ -7,7 +7,7 @@ The Dipole class
 
 .. warning::
 
-    Unlike *handle* classes, with a *variable* class, the methods do not modify the object itself: :matlab:`DI.moveTo('x',1e-6)` does not affect ``DI``.For instance, one should write :matlab:`DI = DI.moveTo('x',1e-6);` or  :matlab:`DI2 = DI.moveTo('x',1e-6);`.
+    Unlike *handle* classes, with a *variable* class, the methods do not modify the object itself. For instance, :matlab:`DI.moveTo('x',1e-6)` does not affect ``DI``. One should write :matlab:`DI = DI.moveTo('x',1e-6);` or  :matlab:`DI2 = DI.moveTo('x',1e-6);`.
 
 
 Properties

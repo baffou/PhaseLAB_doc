@@ -2,7 +2,7 @@ Build the optical setup
 =======================
 
 
-In |PhaseLAB|, the setup is composed of two objects:
+In each |PhaseLAB| main file, one needs to start defining the setup. The setup is composed of two objects:
 
 - a |Microscope| object
 
@@ -77,6 +77,8 @@ An |Objective| object is firstly defined. It enables the specification of the ma
 
 
 Then, a |Microscope| object is defined. It takes an |Objective| object as a first input, the microscope brand (or the focal length of the tube lens) as the second input, and optionally the name of the QLSI camera and the software used to acquire the images.
+
+Note that the magnification of the microscope is negative. It is normal as a microscope inverts an image. It also equals -111.1111 instead of -100. This is because we specified an Olympus objective on a Nikon microscope, and this is what happens when you proceed this way experimentally, because an olympus objective assumes a tube lens with a focal length of 180 mm, while a Nikon microscope has a 200-mm tube lens. The image is thus further magnified.|PhaseLAB| takes this into account.
 
 For more information on how to build the microscope, see :ref:`The_Microscope_class` section.
 

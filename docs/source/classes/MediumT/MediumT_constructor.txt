@@ -30,7 +30,7 @@ Constructor
 
     |hr|
 
-    :matlab:`MediumT(material,h,m_p)` creates a |MediumT| object representing a material layer of thickness ``h``, and specify that the discretization in *z* of the layer will be performed using an ``m_p`` method. ``m_p`` must equal either ``regular`` or ``progressive``. Regular creates a uniform mesh, with an increment that equals the pixel size of the image. ``progressive`` is to be used with thick layer, for which the regular distribution would lead too large a mesh, and too long computation time. It meshes finely the proximity of the interface and roughly further away.
+    :matlab:`MediumT(material,h,m_p)` creates a |MediumT| object representing a material layer of thickness ``h``, and specifies that the discretization in :math:`z` of the layer will be performed using an ``m_p`` method. ``m_p`` must equal either ``regular`` or ``progressive``. ``regular`` creates a uniform mesh, with an increment that equals the pixel size of the image. ``progressive`` is to be used with thick layer, for which the regular distribution would lead too large a mesh, and too long computation time. It meshes finely the proximity of the interface and roughly further away.
 
     |hr|
 

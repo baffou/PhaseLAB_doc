@@ -15,7 +15,7 @@
       
         <p class="title">Description</p>
 
-    ``obj`` can by a vector of *ImageQLSI* objects. In that case, the treatment will be perform on all the objects of the list.
+    ``obj`` can be a vector of *ImageQLSI* objects. In that case, the treatment will be performed on all the objects of the list.
 
     ``obj.binning()`` performs, by default, a 3x3 binning of the images of ``obj``.
 

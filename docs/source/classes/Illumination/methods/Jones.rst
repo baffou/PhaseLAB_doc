@@ -17,7 +17,7 @@
         <p class="title">Description</p>
 
     | Applies optical plates to the illumination beam, according to the Jones matrix formulation. The names can be:
-    | :matlab:`'QWP'``: Quarter waveplate
+    | :matlab:`'QWP'`: Quarter waveplate
     | :matlab:`'HWP'`: Half waveplate
     | :matlab:`'P'`: Linear polarizer
     | and the values are the rotation angles of the wave plates.

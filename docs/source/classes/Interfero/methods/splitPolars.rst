@@ -12,4 +12,4 @@
       
         <p class="title">Description</p>
 
-    This method extracts the different polarisation channels of an *Interfero* object, into an array of *Interfero* objects ``Itf_multi``. If ``Itf`` is an array of :math:`N` |Interfero| objects, then ``Itf_multi`` is an array of :math:`N\times4` |Interfero| objects, where each column is associated to one of the 4 polarisation 0, 45, 90, and 135°.
+    This method extracts the different polarisation channels of an *Interfero* object, into an array of *Interfero* objects ``Itf_multi``. If ``Itf`` is an array of :math:`N` |Interfero| objects, then ``Itf_multi`` is an array of :math:`N\times4` |Interfero| objects, where each column is associated to one of the 4 polarisations 0, 45, 90, and 135°.

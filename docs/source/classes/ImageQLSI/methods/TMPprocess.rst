@@ -15,7 +15,7 @@
       
         <p class="title">Description</p>
 
-    ``obj.TMPprocess()`` compute the 2D temperature map associated with a wavefront distorsion. See Ref. \ [#ACSP10_322]_ for more detail.
+    ``obj.TMPprocess()`` computes the 2D temperature map associated with a wavefront distorsion. See Ref. \ [#ACSP10_322]_ for more detail.
 
     
 
@@ -29,11 +29,11 @@
 
     |hr|
 
-    This method accepts one input parameter, the variable :matlab:`Med` from the class |MediumT|, defining the thermal properties of the surrounding medium (thermal conductivities and d\ *n*\ /d\ *T* values). It also accepts Name-values arguments, as listed below.
+    This method accepts one input parameter, the variable :matlab:`Med` from the class |MediumT|, defining the thermal properties of the surrounding medium (thermal conductivities and d\ *n*\ /d\ *T* values). It also accepts Name-value arguments, as listed below.
 
     |hr|
 
-    Optional outputs are the OPD and temperature Green's functions. The can be reused in subsequent calls of the *TMPprocess* function to save computation time.
+    Optional outputs are the OPD and temperature Green's functions. They can be reused in subsequent calls of the *TMPprocess* function to save computation time.
 
     .. raw:: html
       
@@ -42,15 +42,9 @@
     .. note::
     
         Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where ``Name`` is the argument name and ``Value`` is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
-
-        Example:
-
-        .. code-block:: matlab
-            
-            obj.TMPprocess(___,'Center','Manual','Size',300)
   
 
-    - :matlab:`'g'` and :matlab:`'loop'`
+    - :matlab:`'g'` and :matlab:`'loop'` (default values: ``1`` and ``1``)
 
         For large temperature increases, a non-linear algorithm is required to obtain accurate temperature increase maps, as explained in Ref.\ [#APL102_244103]_. In that case, the :matlab:`'g'` and :matlab:`'loop'` parameters must be specified. Typical values are 0.4 and 10:
 
@@ -60,17 +54,17 @@
         
         Note that :matlab:`g=1; loop=1` corresponds to the linear algorithm.
         
-    - :matlab:`'alpha'`
+    - :matlab:`'alpha'` (default value: ``1e-5``)
 
-        This is the Tikhonov parameter.Keeping it at 1e-5 is usually fine. Higher values tend to smooth the image, and underestimate the temperature increase. Smallervalues tend to increase the noise on the temperature image.
+        This is the Tikhonov parameter.Keeping it at 1e-5 is usually fine. Higher values tend to smooth the image, and underestimate the temperature increase. Smaller values tend to increase the noise on the temperature image.
 
-    - :matlab:`'smoothing'`
+    - :matlab:`'smoothing'` (default value: ``0``, that is no smoothing)
 
-        When the OPD image is very noisy, one may want to smooth it. This can be done using the :matlab:`smooth` method of the |ImageQLSI| class, but also using this Name-Value argument here. If different from zero (the default value), this smoothing option applies the :matlab:`imgaussfilt` function to the image, the value being the parameter of the imgaussfilt function. The smaller the parameter and the stronger the smoothing.
+        When the OPD image is very noisy, one may want to smooth it. This can be done using the :matlab:`smooth` method of the |ImageQLSI| class, but also using this Name-Value argument here. If different from zero (the default value), this smoothing option applies the :matlab:`imgaussfilt` function to the OPD image, the value being the parameter of the *imgaussfilt* function. The smaller the parameter and the stronger the smoothing.
 
-    - :matlab:`'imExpander'` 
+    - :matlab:`'imExpander'`  (default value: ``true``)
 
-        This parameter is a boolean. If set to true, it extrapolates the image over a large area to avoid artefacts on the boundaries of the reconstructed temperature image. This parameter is true by defaults, and we recommend to leave it like that, unless the temperature increase is really located at the center of the image.
+        This parameter is a boolean. If set to true, it extrapolates the image over a double-size area to avoid artefacts on the boundaries of the reconstructed temperature image. This parameter is true by default, and we recommend to leave it like that, unless the temperature increase is really located at the center of the image.
 
     - :matlab:`'T0'` 
 

@@ -34,7 +34,7 @@ Constructor
 
     |hr|
 
-    :matlab:`Illumination(lambda)` creates an *Illumination* object with a specific wavelength ``lambda``.
+    :matlab:`Illumination(lambda)` creates an *Illumination* object with a specific wavelength ``lambda``. The specified value can be in nm or in m. If in nm, the value will be automatically converted into m.
 
     |hr|
 

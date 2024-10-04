@@ -18,7 +18,7 @@ The |c| imaging |/c| function
     
     <p class="title">Description</p>
 
-Function that computes the :math:`E` field at the imaging plane, corresponding to a given set of dipoles at the sample plane. The computation is based on :abbr:`DDA (discrete dipole approximation)` calculations, which take into account dipoles optical coupling.
+Function that computes the :math:`E` field at the image plane, corresponding to a given set of dipoles at the sample plane. The computation is based on :abbr:`DDA (discrete dipole approximation)` calculations, which take into account dipoles optical coupling.
 
 |hr|
 

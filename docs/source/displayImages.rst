@@ -1,8 +1,8 @@
 Display experimental images
 ===========================
 
-The functions: |c| imagesc |/c|, |c| imageph |/c|, |c| imagebw |/c| , |c| imagegb |/c|, |c| imagejet |/c| 
----------------------------------------------------------------------------------------------------------
+The functions: |c| imagesc |/c|, |c| imageph |/c|, |c| imagebw |/c| , |c| imagegb |/c|, |c| imagejet |/c|, |c| imagehsv |/c|, |c| imagehot |/c|, |c| imagefl |/c| 
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 Once the |ImageQLSI| objects have been created, they contain all the information regarding the QLSI images. In particular, the OPD and intensity images (matrices) can be accessed by writing ``IM.OPD`` and ``IM.T``.
 
@@ -42,6 +42,12 @@ Other similar functions are defined, each using a different colorscale, namely
      - gray
    * - ``imagejet``
      - jet
+   * - ``imagehsv``
+     - hsv
+   * - ``imagehot``
+     - hot
+   * - ``imagefl``
+     - invertedGreen()
 
 
 
@@ -64,7 +70,7 @@ or
     
     app = IM.figure();
 
-It displays an advanced Matlab GUI where the wavefront and intensity images are displayed, along with a set of tools, for data processing and rendering. The use of this GUI interface is detailed in :ref:`The GUI of PhaseLAB <The_PhaseLAB_GUI>`.
+It displays an advanced Matlab GUI where the wavefront and intensity images are displayed, along with a set of tools, for data processing and rendering. A full section is dedicated to this important feature of |PhaseLAB|. See Section :ref:`The GUI of PhaseLAB <The_PhaseLAB_GUI>`.
 
 
 The |c| opendx |/c| method
@@ -101,7 +107,7 @@ For more information on the ``opendx`` method, see :ref:`The opendx method <The_
 Color scales
 ------------
 
-All the native color scale of Matlab can naturally be used when displaying |PhaseLAB| images. Also, in the |c| /src/colorMaps |/c| folder, there are predefined colormaps. To display them, just execute the following command, and window will appear with all of them:
+All the native color scales of Matlab can naturally be used when displaying |PhaseLAB| images. Also, in the |c| /src/colorMaps |/c| folder, there are predefined colormaps. To display them, just execute the following command, and a window will appear with all of them:
 
 .. code-block::
 
@@ -124,7 +130,7 @@ where the input is simply the name of the desired color map.
 Color scale generator
 ---------------------
 
-colorMapGenerator is |PhaseLAB| function aim to easily create user-designed color maps. Here is an example:
+:matlab:`colorMapGenerator` is |PhaseLAB| function aimed to easily create user-designed color maps. Here is an example:
 
 .. code-block:: matlab
     :linenos:

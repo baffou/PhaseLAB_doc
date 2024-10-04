@@ -24,7 +24,7 @@
 
     |hr|
 
-    ``obj.highPassFilter(n)`` applies a high-pass filter on the spatial frequencies of the image. ``n`` is the ``sigma`` parameter of the *imgaussfilt* function. The larger ``n``, the flatter the OPD image look.
+    ``obj.highPassFilter(n)`` applies a high-pass filter on the spatial frequencies of the image. ``n`` is the ``sigma`` parameter of the *imgaussfilt* function. The larger ``n``, the flatter the OPD image looks.
     
     |hr|
 

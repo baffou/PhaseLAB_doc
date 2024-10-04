@@ -10,9 +10,9 @@ For instance:
 .. code-block:: matlab
     :linenos:
 
-    dynamicFigure('ph', IMlist)
+    dynamicFigure('ph', IM)
 
-displays the first figure of the *ImageQLSI* array.
+displays the OPD image of the :matlab:`IM` object. If :matlab:`IM` is an **array** of |ImageQLSI| objects, then it displays the OPD of the first object, and one can go from one OPD to the following one by using the left and right arrows. This way, all the OPD images of the :matlab:`IM` array can be easily visualized.
 
 .. figure:: /images/displayFigure1.jpg
    :width: 400
@@ -26,7 +26,7 @@ One can also display more than one image per figure. For instance, to display bo
     dynamicFigure('ph', IMlist,'bw', {IMlist.T})
     linkAxes
 
-Don't forget the braces when calling the property of the object. The keywork 'bw' just means here display in gray scale. The command ``linkAxes`` is optional. It links the two images so that any rescaling of the images using the zoom tool applies to both images.
+Don't forget the braces when calling the property of the object. The keywork :matlab:`'bw'` just means here display in gray scale. The command ``linkAxes`` is optional. It links the two images so that any rescaling of the images using the zoom tool applies to both images.
 
 .. figure:: /images/displayFigure2.jpg
    :width: 700
@@ -62,7 +62,6 @@ One can also use this function to display interferograms (main and reference):
     :linenos:
     
     dynamicFigure('bw', {Itf.Itf}, 'bw', {Itf.Ref.Itf})
-    linkAxes
     fullscreen
 
 One can add the :matlab:`"titles"` keyword to enter titles to be displayed on top of each image:
@@ -70,7 +69,7 @@ One can add the :matlab:`"titles"` keyword to enter titles to be displayed on to
 .. code-block:: matlab
     :linenos:
     
-    dynamicFigure('gb',QLSI{1},'gb',{QLSI{1}.DWx},'gb',{QLSI{1}.DWy}, ...
+    dynamicFigure('gb',IM,'gb',{IM.DWx},'gb',{IM.DWy}, ...
          "titles",{'OPD','DWx','DWy'})
     linkAxes
 
@@ -81,7 +80,7 @@ One can add the :matlab:`"titles"` keyword to enter titles to be displayed on to
 
 
 .. note::
-    Importantly, this function also works if ``IM`` or ``Itf`` in an object *array*. In this case, the first object of the series is primarily displayed, and then, by pressing the right-arrow or left-arrow keys, one can navigate to the next or previous images.
+    Importantly, this function also works if ``IM`` or ``Itf`` is an object *array*. In this case, the first object of the series is primarily displayed, and then, by pressing the right-arrow or left-arrow keys, one can navigate to the next or previous images.
 
 
 

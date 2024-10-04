@@ -14,7 +14,7 @@ Constructor
         obj = Dipole(mat, radius);
         obj = Dipole(mat, radius, z);
         obj = Dipole(alpha, radius, z); % alpha is a scalar or a 3-vector
-        obj = Dipole(eps, radius, z);     % n is a scalar or a 3-vector
+        obj = Dipole(eps, radius, z);   % eps is a scalar or a 3-vector
 
         % examples
         obj = Dipole('Au', 20e-9);

@@ -17,7 +17,7 @@
 
     .. warning::
 
-        The dipole must be illuminated before using this method, using ``obj.shine``.
+        The dipole must be illuminated before using this method, using ``obj.shine()``.
     
     .. code:: matlab
 

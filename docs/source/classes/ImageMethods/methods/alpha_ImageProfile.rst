@@ -18,7 +18,7 @@
       
         <p class="title">Description</p>
 
-    This method of the |ImageEM| and |ImageQLSI| classes returns the polarisability, |OV| and |DM| of small objects, using a radial profile method. The algorithm involves a sum of the pixels on a circular area. The method opens a window with the image. First, click on the OPD image to zoom in on the particle of interest, and press 'z' when the zoom is correct. Second, click on the center of the particle. A new figure will show up, plotting the pixel summation as a function of the radius of the circular area, from 0 to 100 px. Finally, click two times on the graph to define the range of value corresponding to a proper convergence of the integration. In practice, the line shape should feature a plateau, and the user should click at the beginning and at the end of the plateau. For instance, in this example, the user could click on :math:`x=18` and :math:`x=40`:
+    This method of the |ImageEM| and |ImageQLSI| classes returns the polarisability, |OV| and |DM| of small objects, using a radial profile method. The algorithm involves a sum of the pixels on a circular area. The method opens a window with the image. First, click on the OPD image to zoom in on the particle of interest, and press 'z' when the zoom is correct. Second, click on the center of the particle. A new figure will show up, plotting the pixel summation as a function of the radius of the circular area, from 0 to 100 px. Finally, click two times on the graph to define the range of values corresponding to a proper convergence of the integration. In practice, the line shape should feature a plateau, and the user should click at the beginning and at the end of the plateau. For instance, in this example, the user could click on :math:`x=18` and :math:`x=40`:
 
     .. image:: /images/GUI_alphaImageWindow.png
         :width: 450
@@ -46,7 +46,7 @@
 
     - :matlab:`'NNP'`, default value: ``1``
     
-        Number of particles to be clicked on the image. The procedure will stoped after ``N`` particles will be processed, and the returned data will be an array of values.
+        Number of particles to be clicked on the image. The procedure stops after ``N`` particles are processed, and the returned data is an array of values.
 
     - :matlab:`'zoom'`, default value: :matlab:`true`
 

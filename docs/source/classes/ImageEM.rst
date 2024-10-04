@@ -45,13 +45,13 @@ Properties
       - description
     * - ``Ex``
       - double array
-      - x component image of the electric field
+      - :math:`x` component image of the electric field
     * - ``Ey``
       - double array
-      - y component image of the electric field
+      - :math:`y` component image of the electric field
     * - ``Ez``
       - double array
-      - z component image of the electric field
+      - :math:`z` component image of the electric field
     * - ``Einc``
       - *ImageEM*
       - Incident electric field  

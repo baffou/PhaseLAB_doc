@@ -23,7 +23,7 @@ Let us import the tiff interferograms, named *Itf.tiff* and *Ref.tiff*, located 
 Automatic import
 ----------------
 
-If the images have been created using a well-defined acquisition software, the software can be specified when :ref:`creating the microscope <The_Microscope_class>`. And the import of the images gets simplified, using the function |importItfRef|. For instance here, one assumes that the images located in the folder *data* have been acquired using |PhaseLIVE|:
+If the images have been created using a well-defined acquisition software, the software can be specified when :ref:`creating the microscope <The_Microscope_class>`. And the import of the images gets simplified, using the function |importItfRef|. For instance here, one assumes that the images located in the folder *data* have been acquired using |PhaseLIVE| (our home-made Matlab acquisition software, not included in |PhaseLAB|):
 
 .. code-block:: matlab
     :linenos:
@@ -34,7 +34,7 @@ If the images have been created using a well-defined acquisition software, the s
 
 In this example, in line 3, the interferogram is defined, and the reference image is automatically downloaded from the proper file, and incorporated within the ``Itf`` object (``Itf.Ref``). If several images are contained in the *data* folder, then they are all imported at once, and ``Itf`` becomes an object array.
 
-If the number of images is particularly large, like several 100s, then one can import only a link to the saved file, so that the RAM memory does not get saturated. The synthax is the following:
+If the number of images is particularly large, like several 100s, then one can import only a link to the saved files, so that the RAM memory does not get saturated. The synthax is the following:
 
 .. code-block:: matlab
     :linenos:

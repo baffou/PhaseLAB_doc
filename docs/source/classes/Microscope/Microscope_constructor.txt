@@ -32,9 +32,9 @@ Constructor
         
         <div class="title">Description</div>
 
-    ``M`` is the objective magnification, ``OB`` is an |Objective| object, ``brand`` is the brand of the microscope, ``f_TL`` is the focal length of the tube lens (TL), ``CGcam`` is a *CGcamera* object, ``Cam`` is a *Camera* object and ``software`` is the software used to acquire data (must belong to :matlab:`{'Sid4Bio','PHAST','CG','PhaseLIVE','other'}`).
+    ``M`` is the objective magnification, ``OB`` is an |Objective| object, ``brand`` is the brand of the microscope, ``f_TL`` is the focal length of the tube lens (TL), ``CGcam`` is a |CGcamera| object, ``Cam`` is a |Camera| object and ``software`` is the software used to acquire data (must belong to :matlab:`{'Sid4Bio','PHAST','CG','PhaseLIVE','other'}`).
 
-    Using an *Objective* object as the firt input, instead of just a magnification value, enables the specification of the numerical aperture and the objective brand as well. Also, the brand of the microscope is specified as a second input, which here differs from the brand of the objective lens. This happens, and it is important to specifiy because the actual focal length of the TL :math:`f_\mathrm{mic}` differs from one microscope company to another, and the magnifiation written on the objective assumes a specific focal length of the TL :math:`f_\mathrm{obj}`. Here is a table recalling the conventions
+    Using an *Objective* object as the first input, instead of just a magnification value, enables the specification of the numerical aperture and the objective brand as well. Also, the brand of the microscope is specified as a second input, which here differs from the brand of the objective lens. This happens, and it is important to specifiy because the actual focal length of the TL :math:`f_\mathrm{mic}` differs from one microscope company to another, and the magnifiation written on the objective assumes a specific focal length of the TL :math:`f_\mathrm{obj}`. Here is a table recalling the conventions
 
     .. list-table:: Tube length (TL) focal lengths :math:`f_\mathrm{TL}` for each microscope manufacturer
         :widths: 30 30
@@ -81,4 +81,4 @@ Constructor
                 T0: []
             
     
-    Here the magnification equals``-111.1111`` instead of ``-100`` because :math:`M = -100*200/180`.
+    Here the magnification equals ``-111.1111`` instead of ``-100`` because :math:`M = -100*200/180`.

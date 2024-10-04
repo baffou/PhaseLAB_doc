@@ -4,7 +4,7 @@ The ImageT class
 ================
 
 *ImageT* is a handle class.
-See the :ref:`Temperature computing tutorial <Temperature Processing>` for more information on how to create and deal with *ImageT* objects.
+See the :ref:`Temperature computing tutorial <Temperature_Processing>` for more information on how to create and deal with *ImageT* objects.
 
 Properties
 ----------

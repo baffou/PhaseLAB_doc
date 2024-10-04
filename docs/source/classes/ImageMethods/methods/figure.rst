@@ -14,7 +14,7 @@
       
         <p class="title">Description</p>
 
-    This method displays the images of the ``obj`` within the GUI (graphical user interface) of PhaseLAB. See the :ref:`The GUI of PhaseLAB <The_PhaseLAB_GUI>` section for details.
+    This method displays the images of the ``obj`` within the GUI (graphical user interface) of |PhaseLAB|. See the :ref:`GUI of PhaseLAB <The_PhaseLAB_GUI>` section for details.
 
 
 

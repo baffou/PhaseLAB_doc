@@ -51,7 +51,7 @@ Constructor
         
         <p class="title">CGcamera spec files</p>
 
-    Each pre-defined CGcamera is associated with a file located in the **spec/CGcameras**. This file contains all the characteristics of the CG camera. Here is for instance a copy of the Silios_mono.txt file:
+    Each pre-defined CGcamera is associated with a file located in the **spec/CGcameras** folder. This file contains all the characteristics of the CG camera. Here is for instance a copy of the Silios_mono.txt file:
 
     .. code-block::
         :caption: Silios_mono.txt
@@ -68,27 +68,27 @@ Constructor
 
     - *sC8-830.txt*
 
-        A sC8 camera from Phasics we own at the Institut Fresnel, with the reference number 830.
+        A `sC8 <https://www.phasics.com/en/product/sid4-sc8-quantitative-phase-imaging-camera/>`_ camera from Phasics we own at the Institut Fresnel, with the reference number 830.
 
     - *sC8-944.txt*
 
-        A sC8 camera from Phasics we own at the Institut Fresnel, with the reference number 944.
+        A `sC8 <https://www.phasics.com/en/product/sid4-sc8-quantitative-phase-imaging-camera/>`_ camera from Phasics we own at the Institut Fresnel, with the reference number 944.
 
     - *Sid4-CRHEA.txt*
 
-        A Sid4-HR camera from Phasics own by the CRHEA in Nice, France.
+        A `Sid4-HR <https://www.phasics.com/en/product/sid4-hr-wavefront-sensor/>`_ camera from Phasics own by the CRHEA in Nice, France.
 
     - *Sid4-Element-Sona.txt*
 
-        Our Sid4-Element from Phasics, associated with a Sona camera from Andor
+        Our Sid4-Element from Phasics, associated with a Sona camera from Andor.
 
     - *Sid4Element.txt*
 
-        Our Sid4-Element from Phasics, associated with a Zyla 5.5 camera from Andor
+        Our Sid4-Element from Phasics, associated with a Zyla 5.5 camera from Andor.
 
     - *Silios_mono.txt*
 
-        The wavefront camera from Silios
+        The `Makatea <https://www.silios.com/makatea-cam>`_ wavefront camera from Silios.
 
 
     If other QLSI cameras are being used, new custom files can be made, following this pattern and placed in the **spec/CGcamera** folder.

@@ -8,17 +8,17 @@ Color imaging
     .. code-block:: matlab
 
         %% MICROSCOPE
-        ME=Medium('water','glass');
-        OB=Objective(60,0.7,'Olympus');
+        ME = Medium('water','glass');
+        OB = Objective(60,0.7,'Olympus');
         Cam = Camera('Silios');
         Gr = CrossGrating('Gamma',39e-6);
-        CGcam=CGcamera(Cam,Gr,1.1931);
-        MI=Microscope(OB,200,CGcam,'PhaseLIVE');
+        CGcam = CGcamera(Cam,Gr,1.1931);
+        MI = Microscope(OB,200,CGcam,'PhaseLIVE');
 
         CGcam.setDistance(0.8e-3);
 
-        lambda=680e-9;
-        IL=Illumination(lambda,ME);
+        lambda = 680e-9;
+        IL = Illumination(lambda,ME);
 
         folder = 'GeobColor';
 
@@ -42,8 +42,8 @@ Color imaging
         Itfsc = crosstalkCorrection(Itfs);
 
         %% process fluo and OPD images
-        IMG=QLSIprocess(Itfsc(:,1),IL,"Tnormalisation",'subtraction');
-        IMR=QLSIprocess(Itfsc(:,2),IL);
+        IMG = QLSIprocess(Itfsc(:,1),IL,"Tnormalisation",'subtraction');
+        IMR = QLSIprocess(Itfsc(:,2),IL);
 
         dynamicFigure('fl',{IMG.T}, 'ph', {IMR.OPD})
 

@@ -4,4 +4,20 @@ splitPolar and splitColor, regarding the inputs and outputs
 
 The CGMpolar method
 
-QLSIprocess, display option
+Temperature images in file:///Users/perseus/Documents/git/PhaseLAB/PhaseLAB_doc/docs/build/html/classes/ImageT.html
+and in the tutorial
+
+expliquer comment utiliser IFDDA
+
+Dans multiChannelImaging.html, mettre des images
+
+ajouter une image dans la fonction flatten qui explique les distorsion artefactuelles
+
+add an example image to the imageHSV method of ImageMethods
+
+Nanoparticle class
+PhaseLAB_simuBacteria
+
+CGrotate de la classe CGcamera
+
+Ajoutuer tous les arguments de CGMinSilico

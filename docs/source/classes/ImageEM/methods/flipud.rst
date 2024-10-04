@@ -23,5 +23,5 @@
 
     |hr|
 
-    If an output ``obj2`` is used, then the object is not modified, and duplicated.
+    If an output ``obj2`` is used, then the object is duplicated before being modified.
  

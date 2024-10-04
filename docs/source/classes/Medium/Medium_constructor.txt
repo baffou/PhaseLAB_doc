@@ -32,11 +32,11 @@ Constructor
 
     |hr|
 
-    :matlab:`Medium(n, nS)` creates a |Medium| object representing a system composed of two semi-infinite media separated by a planar interface, the top one with a refractive index *n* and the second one with *nS* (*S* for substrate).
+    :matlab:`Medium(n, nS)` creates a |Medium| object representing a system composed of two semi-infinite media separated by a planar interface, the top one with a refractive index ``n`` and the bottom one with ``nS`` (*S* for substrate).
 
     |hr|
 
-    Instead of specifying the refractice indices, one can specify medium names. The known materials and the associated values are the following:
+    Instead of specifying the refractive indices, one can specify medium names. The known materials and the associated values are the following:
 
     - ``glass``: 1.51
     - ``BK7``: 1.51

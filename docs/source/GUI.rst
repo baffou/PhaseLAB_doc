@@ -28,7 +28,7 @@ The navigation panel
 .. image:: /images/GUI_navigationPanel.png
     :width: 250
 
-At the bottom-right corner of the |GUI|, the arrows can be used to navigate from one image to the other, when the ``figure`` method is applied to an array of objects::
+At the bottom-left corner of the |GUI|, the arrows can be used to navigate from one image to the other, when the ``figure`` method is applied to an array of objects::
 
     objList.figure()
 
@@ -57,15 +57,15 @@ The processing tab
 
 The processing tab provides a rich interface to modify the images, e.g., to crop the images, flatten the background, reorient the images, etc. Here are all the functionalities:
 
-- If ticked, the **apply to all images** checkbox makes any image modification apply to all the images of the series.
+- If ticked, the **apply to all images** checkbox makes any image modification apply to all the images of the series at once.
 
 - The **MOTION** section provides tools to rotate or flip the images.
 
 - The **OFFSET** section provides a tool to set the zero of the wavefront image. By pressing the button, the user has to select the area on the image that is supposed to feature a zero wavefront value. The wavefront image will be automatically offseted to fulfill this condition.
 
-- The **CROP** section offers different tools to crop the images by drawing a rectangle. Depending on which button is pressed, either the user is invited to simply draw the rectangle from one corner to the other, or click on the center of the rectangle, and click again to define its dimension. Precise dimensions (width and heigth) can be specified in the text areas **width** and **height**. By defaults, the units are in pixels, by if the user selects **µm** in the top panel of the |GUI|, then the crop width and height can be set in µm.
+- The **CROP** section offers different tools to crop the images by drawing a rectangle. Depending on which button is pressed, either the user is invited to simply draw the rectangle from one corner to the other, or click on the center of the rectangle, and click again to define its dimension. Precise dimensions (width and heigth) can be specified in the text areas **width** and **height**. By defaults, the units are in pixels, but if the user selects **µm** in the top panel of the |GUI|, then the crop width and height can be set in µm.
 
-- The **FLATTEN** section provides a tool to flatten the background. Setting the threshold enables to consider only the background and not the objects, to calculate the background distorsion, as explained in Ref. [#JBO20_126009]_. A threshold value of 1.2 usually works fine. Then, the order of the highest moment has to be specified. With an order value of 1, only the tilt will be corrected, and with a value of 2, the coma will be corrected. Higher orders can be specified if the background features higher orders of distortion. This tool uses the ``flatten`` method of the classes |ImageEM| and |ImageQLSI|. See :ref:`The flatten method <The_flatten_method>` for more information.
+- The **FLATTEN** section provides a tool to flatten the background. It is based on the :ref:`flatten <The_flatten_method>` method of the class |ImageQLSI|. Setting the threshold enables to consider only the background and not the objects, to calculate the background distorsion, as explained in Ref. [#JBO20_126009]_. A threshold value of 1.2 usually works fine. Then, the order of the highest moment has to be specified. With an order value of 1, only the tilt will be corrected, and with a value of 2, the coma will be corrected. Higher orders can be specified if the background features higher orders of distortion. This tool uses the ``flatten`` method of the classes |ImageEM| and |ImageQLSI|. See :ref:`The flatten method <The_flatten_method>` for more information.
 
 .. [#JBO20_126009] Living cell dry mass measurement using quantitative phase imaging with quadriwave lateral shearing interferometry: an accuracy and sensitivity discussion, Aknoun, S. et al., J. Biomed. Opt. 20, 126009 (2015)
 
@@ -82,9 +82,9 @@ The metrology tab
 
 .. image:: /images/GUI_metrology.png
 
-The **Metrology** sectio does not modify the images. It only does measurements on them.
+The **Metrology** section does not modify the images. It only does measurements on them.
 
-- The **METROLOGY** section provides tools to display the pixel values, distances in px and µm, and areas in px and µm^2.
+- The **METROLOGY** section provides tools to display the pixel values, distances in px and µm, and areas in px and µm\ :sup:`2`.
 
 - The **CROSS CUTS** section gathers tools to display image cross-cuts along a line or a polygonal chain, along the vertical and horizontal axes passing by the center of the image, or along a radius with an azimutal average.
 
@@ -107,7 +107,7 @@ The **Metrology** sectio does not modify the images. It only does measurements o
     .. image:: /images/GUI_roiSelectionTool.png
         :width: 450
 
-    Once the polygonal chain is closed, the figure dispappears and after some time of processing, integration curves appear giving the dry mass and optical volume as a function of the dilation factor. Finally, the user should click twice to define the plateau (see Refs. [#BOE13_6550]_ and [#BJ122_1]_ for more details).
+    Once the polygonal chain is closed, the figure disappears and after some time of processing, integration curves appear giving the dry mass and optical volume as a function of the dilation factor. Finally, the user should click twice to define the plateau (see Refs. [#BOE13_6550]_ and [#BJ122_1]_ for more details).
 
 
     .. image:: /images/GUI_roiSelectionTool2.png
@@ -117,11 +117,11 @@ The **Metrology** sectio does not modify the images. It only does measurements o
 
     .. [#BJ122_1]  *Dry mass photometry of single bacteria using quantitative wavefront microscopy*, M. Bénéfice, A. Gorlas, B. Marthy, V. Da Cunha, P. Forterre, A. Sentenac, P. C. Chaumet, G. Baffou, **Biophysical Journal** 122, 1-14 (2023)
 
-    * |magicWandButton|: With this tool, one just need to click on the object of interest, ideally a biological cell.  An automatic magic-wand-like tool will select the object of interest. Here is the interface:
+    * |magicWandButton|: With this tool, one just needs to click on the object of interest, ideally a biological cell.  An automatic magic-wand-like tool will select the object of interest. Here is the interface:
 
     .. image:: /images/GUI_magicWandWindow.png
 
-    Click on the **Magic wand points** button to click on the object of interest. Several clicks can be done to better capture the object. To exlude an area, one can click **Remove area** and draw the area to be removed. One can also confined the segmentation to a given area by clicking on **Confine areaa**. Once all this has been done, click on the space bar. After some time of computation, a new window appears to define the sensitivity of the magic wand, using a scrollbar:
+    Click on the **Magic wand points** button to click on the object of interest. Several clicks can be done to better capture the object. To exlude an area, one can click **Remove area** and draw the area to be removed. One can also confine the segmentation to a given area by clicking on **Confine area**. Once all this has been done, click on the space bar. After some time of computation, a new window appears to define the sensitivity of the magic wand, using a scrollbar:
 
     .. image:: /images/GUI_magicWandSensitivity.png
 
@@ -160,7 +160,7 @@ This tab provides an interface to choose how to export images, in various format
 
 The image numbers to be saved should be indicated, separated by comas or spaces. Colon symbols can be used. For instance: ``1, 3, 10, 15:20, 32``.
 
-Then, click on the check boxes to chose whether the |OPD|, the intensity, or both images should be exported. Choose a prefix for the names of the files to be saved, and a save folder.
+Then, click on the check boxes to choose whether the |OPD|, the intensity, or both images should be exported. Choose a prefix for the names of the files to be saved, and a save folder.
 
 The button overview does not export anything on the hard drive disk. It just displays all the images of the series in one figure.
 

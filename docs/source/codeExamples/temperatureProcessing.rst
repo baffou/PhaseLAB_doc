@@ -15,12 +15,12 @@ Temperature processing
         MI = Microscope(OB,180,'sC8-944','PhaseLIVE');
         MI.refl = false;
 
-        %% BUILDING OF THE ILLUMINATION -- IL=Illumination(lambda);
+        %% BUILDING OF THE ILLUMINATION -- IL = Illumination(lambda);
         lambda = 550e-9;
         IL = Illumination(lambda,ME);
 
         %% IMPORT THE DATA
-        folder=pwd;
+        folder = pwd;
         Im = importItfRef(folder,MI);
 
         %% INTERFEROGRAM PROCESSING -- Im.QLSIprocess(IL);

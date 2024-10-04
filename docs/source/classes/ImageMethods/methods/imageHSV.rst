@@ -12,7 +12,7 @@
       
         <p class="title">Description</p>
 
-    The ``imageHSV`` method displays a mix of the intensity an |OPD| images according to a abbr:`HSV (hue, saturation, value)` pattern. Just like the RVB coding, HSV coding codes any color with 3 numbers:
+    The ``imageHSV`` method displays a mix of the intensity an |OPD| images according to a :abbr:`HSV (hue, saturation, value)` pattern. Just like the RVB coding, HSV coding codes any color with 3 numbers:
     
     - *H* means *Hue* and represents the color on a chromatic circle
 
@@ -20,7 +20,7 @@
 
     - *V* means *Value* and tells if the color is bright or dark.
 
-    Here is a picture that explains the abbr:`HSV (hue, saturation, value)` color coding:
+    Here is a picture that explains the :abbr:`HSV (hue, saturation, value)` color coding:
 
     .. figure:: /images/HSV.jpeg
         :width: 500

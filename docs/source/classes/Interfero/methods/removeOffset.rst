@@ -15,7 +15,7 @@
       
         <p class="title">Description</p>
 
-    ``obj.removeOffset()`` removes from `Itf`, by default, the value of the pixel of weakest intensity in the `Itf` image.
+    ``obj.removeOffset()`` removes from ``Itf``, by default, the value of the pixel of weakest intensity in the ``Itf`` image.
 
     |hr|
 

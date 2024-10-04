@@ -7,26 +7,27 @@ Numerical refocusing
 
     .. code:: matlab
 
-        %% Code that imports an experimental image (of long Geobacillus bacteria), creates a series of im
+        %% Code that imports one experimental image (of long Geobacillus bacteria)
+        %% and creates a series of images at different focuses from this single image
 
-        ME=Medium('water','glass');
-        OB=Objective(100,0.7,'Olympus');
-        MI=Microscope(OB,200,'sC8-944','PhaseLIVE');
-        lambda=531e-9;
-        IL=Illumination(lambda,ME);
+        ME = Medium('water','glass');
+        OB = Objective(100,0.7,'Olympus');
+        MI = Microscope(OB,200,'sC8-944','PhaseLIVE');
+        lambda = 531e-9;
+        IL = Illumination(lambda,ME);
 
         %% IMPORT THE IMAGES
-        folder='GeobLongFilaments';
-        Im =importItfRef(folder,MI);
+        folder = 'GeobLongFilaments';
+        Im = importItfRef(folder,MI);
 
         %% INTERFEROGRAM PROCESSING
-        IM=Im.QLSIprocess(IL);
+        IM = Im.QLSIprocess(IL);
 
         %% list of defocus values in µm
         zList = -20:10;
-        No=length(zList);
+        No = length(zList);
 
-        IMlist=ImageQLSI(No);
+        IMlist = ImageQLSI(No);
 
         for io = 1:No
             IMlist(io) = copy(IM(1));
@@ -35,7 +36,7 @@ Numerical refocusing
         end
 
         % select the area supposed to correspond to a zero wavfront value
-        IMlist.level0(Center="Manual",Size="Manual");
+        IMlist.level0(Center="Manual", Size="Manual");
 
         % crop the image
         IMlist.crop(Size=2000);

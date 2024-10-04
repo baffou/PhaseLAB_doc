@@ -33,7 +33,7 @@ Constructor
 
     |hr|
 
-    :matlab:`obj = Interfero(mat, MI)` creates a *Interfero* object ``obj`` from a matrix ``mat`` and a given *Microscope* object ``MI``.
+    :matlab:`obj = Interfero(mat, MI)` creates a *Interfero* object ``obj`` from a matrix ``mat`` and a given |Microscope| object ``MI``.
 
     |hr|
 

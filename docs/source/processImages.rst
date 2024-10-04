@@ -18,15 +18,15 @@ A large number of keywords can be specified in the QLSIprocess method. The compr
     :linenos:
 
     IM = QLSIprocess(Itf,IL,'saveGradients',true);
-    dynamicFigure('ph', IM.DWx, 'ph', IM.DWy)
+    dynamicFigure('ph', {IM.DWx}, 'ph', {IM.DWy})
 
-One can also choose between high-definition or low-definition image processing, using the keyword :matlab:`'resolution'`:
+One can also choose between high-definition or low-definition image processing, using the keyword :matlab:`'definition'`:
 
 .. code-block:: matlab
     :linenos:
 
-    IM_high = QLSIprocess(Itf,IL,'resolution','high');
-    IM_low = QLSIprocess(Itf,IL,'resolution','low');
+    IM_high = QLSIprocess(Itf,IL,'definition','high');
+    IM_low = QLSIprocess(Itf,IL,'definition','low');
 
 The QLSI algorithm involves a crop in the Fourier space, centered on the 1\ |st|  diffraction orders. The crop is made automatically. However, one may want to click oneself on the 1\ |st| diffraction order in the Fourier space. In that case, one has to use the keyword :matlab:`'auto'` and set it to ``false``:
 
@@ -55,7 +55,7 @@ In this case, a figure is displayed, waiting for the user to click, several time
 
    Click on a first order spot.
 
-When a computation has been done for a given interferogram, the crop parameters in the Fourier space are saved within the |Interfero| object, and any other |Interfero| image associated with the same reference will use these predefined crop parameters.
+When a computation has been done for a given interferogram, the crop parameters in the Fourier space are saved within the |Interfero| object, and any other |Interfero| image associated with the same reference will use these predefined crop parameters, unless the size of the subsequent images is different. In that case, |PhaseLAB| proposes again the manual selection procedure to determine the new spot locations.
 
 For more information on how to process |Interfero| objects, refer to :ref:`The QLSIprocess method <The_QLSIprocess_method>` section.
 

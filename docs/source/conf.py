@@ -172,6 +172,10 @@ rst_prolog = """
 
 .. |RL| replace:: :abbr:`RL (relay-lens)`
 
+.. |QLSI| replace:: :abbr:`QLSI (quadriwave lateral shearing interferometry)`
+
+.. |CGM| replace:: :abbr:`QLSI (cross-grating wavefront microscopy)`
+
 
 
 """

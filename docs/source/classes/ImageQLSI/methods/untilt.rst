@@ -16,9 +16,9 @@
       
         <p class="title">Description</p>
 
-    ``obj.untilt()`` removes any possible tilt of the ``OPD`` image by calculating the (1,1) aand (1, -1) Zernike moments of the image, and subtracting the corresponding tilts to the image.
+    ``obj.untilt()`` removes any possible tilt of the ``OPD`` image by calculating the (1,1) and (1, -1) Zernike moments of the image, and subtracting the corresponding tilts to the image.
 
-    By default, the moment are calculated on the whole image. The power of this methods lies on the fact that the moments can also be calculated on any sub-area of the image, if some Name-Value arguments are specified (see next section).
+    By default, the moment are calculated on the whole image. The power of this methods lies on the fact that the moments can also be calculated on any sub-area of the image, if some Name-value arguments are specified (see next section).
 
     |hr|
 
@@ -36,14 +36,8 @@
     .. note::
     
         Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where Name is the argument name and Value is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
-
-        Example:
-
-        .. code-block:: matlab
-            
-            obj.untilt(___,'Center','Manual','Size',300)
   
-    The Name-Value arguments in the *untilt* method are used to define how the reference area is chosen. This referenc area is the one that will feature a no-tilt when the tilt correction will be applied. When some arguments are set to :matlab:`'Manual'`, a figure appears so that the user can select this area, in 1 or 2 clicks.
+    The Name-Value arguments in the *untilt* method are used to define how the reference area is chosen. This reference area is the one that will feature a no-tilt when the tilt correction will be applied. When some arguments are set to :matlab:`'Manual'`, a figure appears so that the user can select this area, in 1 or 2 clicks.
 
     - :matlab:`'Center'`
 
@@ -59,7 +53,7 @@
 
     - :matlab:`'params'`
 
-        One can also direclty write the coordinates of the bottom-left and top-right corners, using :matlab:`crop(___,'params', [x1, x2, y1, y2])`. In this case, no figure opens.
+        One can also direclty write the coordinates of the bottom-left and top-right corners, using :matlab:`crop(___,'params', [x1, x2, y1, y2])`. In this case, no figure pops up.
 
 
 

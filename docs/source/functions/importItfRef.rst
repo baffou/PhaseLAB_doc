@@ -16,7 +16,7 @@ The |c| importItfRef |/c| function
     
     <p class="title">Description</p>
 
-The function ``importItfRef`` automatically import the interfero, and the corresponding reference interferograms, from a specified folder. To use this function, it is necessary to specify a sofware input when defining the |Microscope| object. If several images are contained in the data folder, then they are all imported at once, and ``Itf`` becomes an object array.
+The function ``importItfRef`` automatically imports the interferoimage(s), and the corresponding reference interferogram(s), from a specified folder. To use this function, it is necessary to specify a software input when defining the |Microscope| object. If several images are contained in the data folder, then they are all imported at once, and ``Itf`` becomes an object array.
 
 |hr|
 
@@ -46,7 +46,7 @@ If the computer has got an NVidia card, one can use gpuArray variables instead o
     Itf = importItfRef(folder, MI, 'gpu', true);
     Itf = importItfRef(folder, MI, 'remote', true, 'gpu', true);
 
-Line 1 saves the interferogram matrices in the graphics card. Line 2 does not save anything, because it specifies a remote location of the interferograms on the hard drive. However, when the matrices are called using ``Itf.Itf``, they are stored in the graphic card.
+Line 1 stores the interferogram matrices in the graphics card. Line 2 does not store anything, because it specifies a remote location of the interferograms on the hard drive. However, when the matrices are called using ``Itf.Itf``, they are stored in the graphic card.
 
 When further using :ref:`the QLSIprocess method <The_QLSIprocess_method>`, The ImageQLSI objects will also contrain gpuArrays.
 
