@@ -81,11 +81,9 @@ Finally, the results can be displayed using the :matlab:`figureT` method.
     IMT.figureT();
 
 
-
-
-
-
-
+.. image:: images/temperatureImages.png
+    :width: 750
+    :align: center
 
 
 
