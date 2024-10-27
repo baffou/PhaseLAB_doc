@@ -20,9 +20,11 @@
         % examples
         obj.flatten('Zernike')
         obj.flatten('Legendre', 'mnax', 3, 'threshold', 1.2);
-        obj.flatten('Chebyshev', 'kind', 1, 'mnax', 3)
+        obj.flatten('Chebyshev', 'kind', 1, 'mnax', 3, 'display', true)
         obj.flatten('Gaussian', 'nGauss', 100);
         obj.flatten('Legendre', 'nmax', 4, 'mask', booleanMatrix);
+        obj.flatten('Legendre', 'nmax', 4,  'threshold', 1.2, 'nGauss', 10, 'cut', 0.5, 'invert', true);
+        obj.flatten('Legendre', 'nmax', 4,  'params', params);
 
 
     .. raw:: html
@@ -48,7 +50,14 @@
 
             obj.flatten('Legendre', 'nmax', 2)
             
-        removes all the :math:`(n,m)` Legendre moments from the image such that :math:`n+m\le n_\mathrm{max}=2`, i.e., (0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2). Here is a repesentation of the Legendre polynomials.
+        removes all the :math:`(n,m)` Legendre moments from the image such that :math:`n+m\le n_\mathrm{max}=2`, i.e., (0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2). Here is a repesentation of the Legendre polynomials. Alternatively, ``nmax`` canbe a 2-vector representing the maximum values of :math:`n` and :math:`m`:
+
+        .. code-block:: matlab
+
+            obj.flatten('Legendre', 'nmax', [2,2])
+            
+        removes all the :math:`(n,m)` Legendre moments from the image such that :math:`n\le n_\mathrm{max}=2` and :math:`m\le m_\mathrm{max}=2`, i.e., (0, 0), (1, 0), (0, 1), (1, 1), (2, 0), (0, 2), (2, 1), (1, 2), (2, 2).
+
 
         .. image:: /images/LegendrePolynomials.png
             :width: 400
@@ -76,11 +85,12 @@
 
     - :matlab:`'threshold'`
 
-        It is common to observe thick objects within the field of view of the microscope, like eukaryotic cells. Such objects would contribute to the moment computation while they should not. The moment should only consider distorsion of the background. The *flatten* function can be used to compute the moments only stemming from the background of the image. For this purpose, the code has to determine which part of the image is the background (or reciprocally, which part of the image is the object). For this purpose, a segmentation procedure is used, optimized for the study of eukaryotic cells. The procedure involved a free parameter that is specified using this :matlab:`'threshold'` parameter. A value a 1 is a good starting value.
+        It is common to observe thick objects within the field of view of the microscope, like eukaryotic cells. Such objects would contribute to the moment computation while they should not. The moment should only consider distorsion of the background. The *flatten* function can be used to compute the moments only stemming from the background of the image. For this purpose, the code has to determine which part of the image is the background (or reciprocally, which part of the image is the object). For this purpose, a segmentation procedure is used, optimized for the study of eukaryotic cells. The procedure involves a free parameter that is specified using this :matlab:`'threshold'` parameter. A value a 1 is a good starting value.
 
     - :matlab:`'mask'`
 
-        For some samples, the automatic segmentation procudure that is used when setting a value to :matlab:`threshold` may be uneffective. In this case, one can specify a mask, as a matrix of the same size as the image, with 0 and 1 values, where the 1 values define to the background area. This mask is to be built by the user itself in the main |PhaseLAB| file before calling the function *flatten*.
+        For some samples, the automatic segmentation procudure that is used when setting a value to :matlab:`threshold` may be uneffective. In this case, one can specify a mask, as a matrix of the same size as the image, with 0 and 1 values, where the 1 values define to the background area. This mask is to be built by the user itself in the main |PhaseLAB| file before calling the function *flatten*. See the :ref:`Background flattening <Background_Flattening>` tutorial for more information on how to create a mask, and use the ``threshold``, ``nGauss``, ``cut``, and ``invert`` parameters.
+
 
     - :matlab:`'display'`
 

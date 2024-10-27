@@ -45,7 +45,7 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
 
 .. toctree::
     :maxdepth: 2
-    :caption: Tutorial
+    :caption: Tutorials
 
     buildMicroscope
     importImages
@@ -54,6 +54,7 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     inSilico
     multiChannelImaging
     TemperatureProcessing
+    BackgroundFlattering
 
 .. toctree::
     :maxdepth: 2
