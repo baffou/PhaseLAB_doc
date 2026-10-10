@@ -2,7 +2,6 @@ Make a movie
 ++++++++++++
 
 .. dropdown:: **Making a movie** |subTitle|  Animating the image of nanoparticles as a function of the focus. |/subTitle|
-    :name: toto
     :open:
 
     .. code:: matlab

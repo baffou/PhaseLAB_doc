@@ -66,7 +66,10 @@ div.related h3 {
 .highlight .mi { color: #000 } /* Literal.Number.Float */
 
 
-.rst-content code.literal{color:#222;background-color: none;} /* background des ``...`` */
+.rst-content code.literal{
+    color:#222;
+    background-color: none;
+} /* background des ``...`` */
 
 
 
@@ -83,7 +86,18 @@ li a.icon{color: #1e6ca7;} /* hover in the vertical menue */
 li a.icon:hover{color: #1e6ca7;} /* hover in the vertical menue */
 
 /* titres de chapitres dans le menu */
-.wy-menu-vertical header,.wy-menu-vertical p.caption{color:#55a5d9;height:32px;line-height:32px;padding:0 1.618em;margin:12px 0 0;display:block;font-weight:700;text-transform:uppercase;font-size:85%;white-space:nowrap}
+.wy-menu-vertical header,.wy-menu-vertical p.caption{
+    color:#55a5d9;
+    height:32px;
+    line-height:32px;
+    padding:0 1.618em;
+    margin:12px 0 0;
+    display:block;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:85%;
+    white-space:nowrap
+}
 
 /* encadré en haut à gauche */
 .wy-side-nav-search{background-color:#222;color:#fcfcfc}
@@ -214,4 +228,49 @@ footer a:hover {
 
 a.btn {
     color: #ff0000; /* Change this to your desired color */
+}
+
+
+
+/* Surcharge */
+
+.wy-nav-content {
+    max-width: 1200px;
+}
+
+
+
+/* MATLAB comments */
+.highlight .c,
+.highlight .c1,
+.highlight .cm {
+    color: #008000 !important;
+    font-style: normal;
+}
+
+/* MATLAB strings */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx {
+    color: #C05000 !important;
+}
+
+/* MATLAB keywords */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+    color: #0000CC !important;
+    font-weight: normal;
 }

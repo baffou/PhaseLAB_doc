@@ -4,14 +4,14 @@ Download
 Download the last version of the |PhaseLAB| toolbox at `github.com/baffou/PhaseLAB <https://github.com/baffou/PhaseLAB>`_.
 
 
-.. panels::
+.. grid:: 1
 
-    Download from Github
+    .. grid-item::
 
-    +++
+        Download from Github
 
-    .. link-button:: https://github.com/baffou/PhaseLAB
-        :classes: stretched-link
-        :text:    github.com/baffou/PhaseLAB
+        .. button-link:: https://github.com/baffou/PhaseLAB
+            :color: primary
+            :expand:
 
-
+            github.com/baffou/PhaseLAB

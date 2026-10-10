@@ -1,8 +1,8 @@
-.. dropdown:: **binning** |subTitle| Performs 2x2 or 3x3 pixel binning of the images of the ImageQLSI object. |/subTitle|
+.. dropdown:: **binning** |subTitle| Performs 2x2 or 3x3 or 4x4 pixel binning of the images of the ImageQLSI object. |/subTitle|
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 
@@ -21,7 +21,7 @@
 
     |hr|
 
-    ``obj.binning(n)`` performs, :math:`n\times n` binning of the images of ``obj``. Only works with ``n = 2`` or ``n = 3``.
+    ``obj.binning(n)`` performs, :math:`n\times n` binning of the images of ``obj``. Only works with ``n = 2``, ``n = 3``, or ``n = 4``.
     
     |hr|
 

@@ -5,6 +5,8 @@ The MediumT class
 
 *MediumT* is a handle class.
 
+A *MediumT* object represent the media in the object space, as two semi-infinite domains, possibly a finite layer in between, used for temperature image processing.
+
 Properties
 ----------
 
@@ -75,3 +77,4 @@ Properties
 
 .. include:: MediumT/MediumT_constructor.txt
 
+.. include:: MediumT/MediumT_methods.txt

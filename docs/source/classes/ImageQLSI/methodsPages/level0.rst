@@ -1,3 +1,5 @@
+:orphan:
+
 **level0** (ImageQLSI classes method) |subTitle| Adjusts the offset of an image. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

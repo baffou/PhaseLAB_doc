@@ -18,16 +18,16 @@ By using this software, you agree to abide by the terms of the CC BY-NC license.
 
 The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baffou/PhaseLAB>`_.
 
-.. panels::
 
-    Download from Github
 
-    +++
+.. grid:: 1
 
-    .. link-button:: https://github.com/baffou/PhaseLAB
-        :text:    github.com/baffou/PhaseLAB
+    .. grid-item-card:: Download from GitHub
 
-.. Indices and tables
+        .. button-link:: https://github.com/baffou/PhaseLAB
+
+            github.com/baffou/PhaseLAB
+
 .. ==================
 
 .. * :ref:`genindex`
@@ -47,14 +47,16 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     :maxdepth: 2
     :caption: Tutorials
 
-    buildMicroscope
-    importImages
-    processImages
-    displayImages
-    inSilico
-    multiChannelImaging
-    TemperatureProcessing
-    BackgroundFlattering
+    buildMicroscope     <tutos/buildMicroscope>
+    importImages        <tutos/importImages>
+    processImages       <tutos/processImages>
+    displayImages       <tutos/displayImages>
+    BackgroundFlattering    <tutos/BackgroundFlattering>
+    inSilico            <tutos/inSilico>
+    multiColorImaging   <tutos/multiColorImaging>
+    TemperatureProcessing   <tutos/TemperatureProcessing>
+    PolarizationImaging <tutos/PolarizationImaging>
+    GUI                 <tutos/GUI>
 
 .. toctree::
     :maxdepth: 2
@@ -63,28 +65,29 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     codeExamples
 
 .. toctree::
-    :maxdepth: 2
-    :caption: GUI
-
-    GUI
-
-.. toctree::
     :maxdepth: 3
     :caption: Classes
 
     Camera     <classes/Camera>
+    CameraLive     <classes/CameraLive>
     CGcamera     <classes/CGcamera>
     CrossGrating     <classes/CrossGrating>
     Dipole     <classes/Dipole>
     Illumination <classes/Illumination>
     ImageEM    <classes/ImageEM>
     ImageQLSI    <classes/ImageQLSI>
+    ImageQLSIpolar    <classes/ImageQLSIpolar>
+    ImageJonesMatrix    <classes/ImageJonesMatrix>
     ImageT    <classes/ImageT>
+    ImageTransmittance    <classes/ImageTransmittance>
     Interfero    <classes/Interfero>
     Medium   <classes/Medium>
     MediumT   <classes/MediumT>
+    Monochromator   <classes/Monochromator>
     Microscope   <classes/Microscope>
+    Nanoparticle   <classes/Nanoparticle>
     Objective   <classes/Objective>
+    RelayLens   <classes/RelayLens>
 
 .. toctree::
     :maxdepth: 2
@@ -95,6 +98,7 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     importItfRef   <functions/importItfRef>
     dynamicFigure  <functions/dynamicFigure>
     dynamicMovie  <functions/dynamicMovie>
+    MieScattering  <functions/MieScattering>
     opendx0  <functions/opendx0>
 
 

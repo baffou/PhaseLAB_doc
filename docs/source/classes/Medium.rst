@@ -5,6 +5,8 @@ The Medium class
 
 *Medium* is a handle class.
 
+A *Medium* object represent the media in the object space, as two semi-infinite domains.
+
 Properties
 ----------
 

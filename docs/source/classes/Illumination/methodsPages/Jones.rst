@@ -1,5 +1,7 @@
-**Jones** (Illumination class method) |subTitle| Applies a Jones matrix to an *Illumination* object. |/subTitle|
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+:orphan:
+
+**Jones** (Illumination class method) |subTitle| Applies a series of Jones matrices to an *Illumination* object. |/subTitle|
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. include:: /classes/Illumination/methods/Jones.rst
 

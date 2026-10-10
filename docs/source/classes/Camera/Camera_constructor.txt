@@ -5,7 +5,7 @@ Constructor
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
 
@@ -18,6 +18,7 @@ Constructor
         % examples
         obj = Camera('Zyla');
         obj = Camera(5.5e-6, 2048);
+        obj = Camera(5.5, 2048);
         obj = Camera(5.2e-6, 2160, 2048);
 
     .. raw:: html
@@ -29,7 +30,7 @@ Constructor
     |hr|
 
 
-    :matlab:`obj = Camera(camName)` creates a *Camera* object, where ``camName`` is a *char* that defines the camera. The camera names must correspond to the names of the files contained in the folder **spec/cameras**. For instance, :matlab:`obj = Camera('Zyla');`.
+    :matlab:`obj = Camera(camName)` creates a *Camera* object, where ``camName`` is a *char* that defines the camera. The camera names must correspond to the file names contained in the folder **spec/cameras**. For instance, :matlab:`obj = Camera('Zyla5.5');`.
 
     |hr|
 
@@ -69,26 +70,29 @@ Constructor
 
         The Sona camera from Andor.
 
-    - *Zyla.json*
+    - *Zyla5.5.json*
 
-        The Zyla 5.5 from Andor (the one used in the sC8 cameras from Phasics)
+        The Zyla 5.5 from Andor (in particular the one used in the sC8 cameras from Phasics)
 
 
-    Each spec file contains all the characteristics of the camera. Here is for instance a copy of the *Zyla.json file*:
+    Each spec file contains all the characteristics of the camera. Here is for instance a copy of the *Zyla5.5.json file*:
 
     .. code-block:: json
         :caption: Zyla.json
 
         {"class":"Camera",
-        "model": "Zyla",
+        "brand": "Andor",
+        "model": "Zyla5.5",
         "dxSize": 6.5e-6,
         "Nx": 2560,
         "Ny": 2160,
-        "fullWellCapacity": 25000,
+        "fullWellCapacity": 30000,
+        "bitDepth": 16,
         "offset":100,
         "colorChannels":1
         }
 
-    All these parameters are respectively the class (*Camera*), the model, the dexel size, the number of columns, the number of rows, the full well capacity, the constructor offset (in counts) and the number of color channels.
+
+    All these parameters are respectively the class (*Camera*), the brand, the model, the dexel size, the number of columns, the number of rows, the full well capacity, the bit depth in bit, the constructor offset (in counts) and the number of color channels.
 
     If other cameras are being used, new custom files can be made, following this pattern. Any new file can be saved in the **spec/cameras** folder, or in any other folder known by Matlab. However, in order to simply keep track of the updated versions of |PhaseLAB| via Github, I suggest to store any custom-made file to a separate folder, out of the |PhaseLAB| package, and include this directory in the Matlab paths. Also, feel free to contact me to ask for any file addition/modification in the public Github version of |PhaseLAB| that would suit your studies.

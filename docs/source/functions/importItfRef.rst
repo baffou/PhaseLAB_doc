@@ -5,7 +5,7 @@ The |c| importItfRef |/c| function
 
 .. raw:: html
     
-    <p class="title">Synthax</p>
+    <p class="title">Syntax</p>
 
 .. code-block:: matlab
 
@@ -20,7 +20,7 @@ The function ``importItfRef`` automatically imports the interferoimage(s), and t
 
 |hr|
 
-If the number of images is particularly large, like several 100s, then one can import only a link to the saved file, so that the RAM memory does not get saturated. The synthax is the following:
+If the number of images is particularly large, like several 100s, then one can import only a link to the saved file, so that the RAM memory does not get saturated. The syntax is the following:
 
 .. code-block:: matlab
 

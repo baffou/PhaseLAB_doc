@@ -5,6 +5,8 @@ The Objective class
 
 *Objective* is a handle class.
 
+An *Objective* object represents the objective of the microscope.
+
 Properties
 ----------
 

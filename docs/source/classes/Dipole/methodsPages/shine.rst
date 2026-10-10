@@ -1,3 +1,5 @@
+:orphan:
+
 **shine** (Dipole class method) |subTitle| Illuminate a dipole. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

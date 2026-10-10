@@ -1,3 +1,5 @@
+:orphan:
+
 .. _The_splitColors_method:
 
 

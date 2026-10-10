@@ -1,3 +1,5 @@
+:orphan:
+
 **mean** (ImageQLSI class method) |subTitle| Average the OPD and T images of a list of *ImageQLSI* objects. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

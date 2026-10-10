@@ -1,3 +1,5 @@
+:orphan:
+
 **Rytov** (ImageEM & ImageQLSI classes method) |subTitle| Returns the Rytov image. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

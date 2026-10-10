@@ -1,0 +1,65 @@
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+        
+        <p class="title">Syntax</p>
+
+    .. code-block:: matlab
+        :class: custom-code
+
+        obj = ImageQLSIpolar()
+        obj = ImageQLSIpolar(IM)
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    ``obj = ImageQLSIpolar()`` creates an empty *ImageQLSIpolar* object.
+
+    |hr|
+
+    ``objList = ImageQLSIpolar(IM)`` create a (n,1)-vector of *ImageQLSIpolar* objects, ``objList``, from an a (n,4)-array of *ImageQLSI* objects.
+
+    |hr|
+
+    .. raw:: html
+            
+        <p class="title">Examples</p>
+    
+    .. dropdown:: **Build an ImageQLSIpolar object by importing data**
+
+        .. code-block:: matlab
+
+            T = readMatrix('data/T.txt');
+            W = readMatrix('data/W.txt');
+
+            MI = Microscope(100);         % creates a microscope with 100x magnification
+            IL = Illumintation (530e-9);  % creates an illumination at lambda = 530 nm
+
+            IM = ImageQLSIpolar(T, W, MI, IL); % creates the ImageQLSIpolar object
+            
+
+    .. raw:: html
+        
+        <p class="title">Name-value arguments</p>
+    
+    .. note::
+        
+        Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where ``Name`` is the argument name and ``Value`` is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
+
+        Example: :matlab:`ImageQLSIpolar(___,'remotePath','images/data')`
+    
+
+    - :matlab:`remotePath`
+
+        When working with a long vector of *ImageQLSIpolar* objects, one can save RAM memory by storing the ``T`` and ``OPD`` matrices on the hard disk drive, when creating the objects. For this purpose, specify the folder to store these data.
+
+    - :matlab:`FileName`
+
+        The ``remotePath`` option has to be used in parallel with the ``FileName`` option, specifying the prefix of the files saved of the computer.
+
+

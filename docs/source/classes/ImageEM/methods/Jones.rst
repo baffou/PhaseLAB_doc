@@ -1,8 +1,9 @@
+
 .. dropdown:: **Jones** |subTitle| apply Jones matrices to the E field of the images. |/subTitle|
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
 
     .. code-block:: matlab

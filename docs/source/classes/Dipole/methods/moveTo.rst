@@ -1,8 +1,8 @@
-.. dropdown:: **moveTo** |subTitle| move the dipole to aa given position. |/subTitle|
+.. dropdown:: **moveTo** |subTitle| move the dipole to a given position. |/subTitle|
     
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 

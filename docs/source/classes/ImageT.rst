@@ -4,7 +4,8 @@ The ImageT class
 ================
 
 *ImageT* is a handle class.
-See the :ref:`Temperature computing tutorial <Temperature_Processing>` for more information on how to create and deal with *ImageT* objects.
+
+An *ImageT* object represent a temperature map obtained from a wavefront image. See the :ref:`Temperature computing tutorial <Temperature_Processing>` for more information on how to create and deal with *ImageT* objects.
 
 Properties
 ----------
@@ -18,10 +19,6 @@ Properties
       - type
       - default
       - description
-    * - ``OPD``
-      - *double* array
-      - 
-      - OPD image
     * - ``TMP``
       - *double* array
       - 
@@ -30,6 +27,14 @@ Properties
       - *double* array
       - 
       - Heat source density image
+    * - ``OPD``
+      - *double* array
+      - 
+      - Initial OPD image
+    * - ``T``
+      - *double* array
+      - 
+      - Initial transmittance image
     * - ``zT``
       - *double*
       - 0

@@ -1,3 +1,5 @@
+:orphan:
+
 **sum** (ImageEM class method) |subTitle| Coherent sum of the fields. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

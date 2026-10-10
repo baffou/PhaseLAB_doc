@@ -5,33 +5,10 @@ The ImageEM class
 
 *ImageEM* is a handle class.
 
+An *ImageEM* represents a 2D distribution (an image) or an electromagnetic wave, characterized by amplitude, phase and polarization components along the x, y, and z directions. *ImageEM* objects are normally generated using simulations, while |ImageQLSI| objects arise from measurements.
+
 Properties
 ----------
-
-
-
-.. list-table:: Public properties
-    :widths: 30 30 30 100 
-    :header-rows: 1
-    :align: center
-
-    * - name
-      - type
-      - default
-      - description
-    * - ``Microscope``
-      - *Microscope*
-      - 
-      - Microscope object
-    * - ``Illumination``
-      - *Illumination*
-      - 
-      - Illumination object
-    * - ``comment``
-      - char
-      - 
-      - Any comment on the image
-
 
 
 
@@ -73,6 +50,29 @@ Properties
     * - ``Ph``
       - double
       - Phase image
+
+.. list-table:: Public properties
+    :widths: 30 30 30 100 
+    :header-rows: 1
+    :align: center
+
+    * - name
+      - type
+      - default
+      - description
+    * - ``Microscope``
+      - *Microscope*
+      - 
+      - Microscope object
+    * - ``Illumination``
+      - *Illumination*
+      - 
+      - Illumination object
+    * - ``comment``
+      - char
+      - 
+      - Any comment on the image
+
 
 
 .. include:: ImageEM/ImageEM_constructor.txt

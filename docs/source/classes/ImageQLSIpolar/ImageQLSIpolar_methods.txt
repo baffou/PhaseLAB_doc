@@ -1,0 +1,24 @@
+
+
+ImageQLSIpolar methods
+----------------------
+
+.. include:: /classes/ImageQLSIpolar/methods/figure.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/setCalcSjMode.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/adjustPolarOffsets.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/setThetaShift.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/set_retMax.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/set_eLim.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/set_dichroMax.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/im2J.rst
+
+.. include:: /classes/ImageQLSIpolar/methods/im2T.rst
+
+

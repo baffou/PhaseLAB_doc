@@ -2,7 +2,7 @@
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
 
@@ -15,7 +15,7 @@
       
         <p class="title">Description</p>
 
-    ``obj.TMPprocess()`` computes the 2D temperature map associated with a wavefront distorsion. See Ref. \ [#ACSP10_322]_ for more detail.
+    ``obj.TMPprocess()`` computes the 2D temperature map associated with a wavefront distorsion. See Ref. \ [#ACSP10_322bis]_ for more detail.
 
     
 
@@ -44,15 +44,15 @@
         Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where ``Name`` is the argument name and ``Value`` is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
   
 
-    - :matlab:`'g'` and :matlab:`'loop'` (default values: ``1`` and ``1``)
+    - :matlab:`'g'` and :matlab:`'nLoop'` (default values: ``1`` and ``1``)
 
-        For large temperature increases, a non-linear algorithm is required to obtain accurate temperature increase maps, as explained in Ref.\ [#APL102_244103]_. In that case, the :matlab:`'g'` and :matlab:`'loop'` parameters must be specified. Typical values are 0.4 and 10:
+        For large temperature increases, a non-linear algorithm is required to obtain accurate temperature increase maps, as explained in Ref.\ [#APL102_244103]_. In that case, the :matlab:`'g'` and :matlab:`'nLoop'` parameters must be specified. Typical values are 0.4 and 10:
 
         .. code-block:: matlab
             
-            objT = TMPprocess(Med, 'g', 0.4, 'loop', 10);
+            objT = TMPprocess(Med, 'g', 0.4, 'nLoop', 10);
         
-        Note that :matlab:`g=1; loop=1` corresponds to the linear algorithm.
+        Note that :matlab:`g=1; nLoop=1` corresponds to the linear algorithm.
         
     - :matlab:`'alpha'` (default value: ``1e-5``)
 
@@ -87,6 +87,7 @@
         Specifies the 3D temperature Green's function, in case it has aleady been computed before, just to save computation time.
 
 
-    .. [#ACSN6_2452] *Thermal Imaging of Nanostructures by Quantitative Optical Phase Analysis*, G. Baffou et al., **ACS Nano** 6, 2452 (2012)
+    .. [#ACSP10_322bis] *Wavefront microscopy using quadriwave lateral shearing interferometry: from bioimaging to nanophotonics*, G. Baffou, **ACS Photonics** 10, 322 (2023)
 
     .. [#APL102_244103] *Three-dimensional temperature imaging around a gold microwire*, **Applied Physics Letters** 102, 244103 (2013)
+

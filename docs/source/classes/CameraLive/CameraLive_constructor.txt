@@ -1,0 +1,40 @@
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+      
+        <p class="title">Syntax</p>
+
+    .. code-block:: matlab
+
+        % prototypes
+        obj = Cam.makeALive;
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    :matlab:`obj = Cam.makeALive;` upgrades an already existing **Camera** object into a **CameraLive object**. **CameraLive** is an abstract class, meaning that it is a template for other subclasses. The actual subclass that will be created depends on the ``brand`` property, according to the following table:
+
+    +-------------------+-----------------------+
+    | Brand             | Camera subclass       |
+    +===================+=======================+
+    | Andor             | Camera_Andor          |
+    +-------------------+-----------------------+
+    | Hamamatsu         | Camera_Hamamatsu      |
+    +-------------------+-----------------------+
+    | PCO               | Camera_PCO            |
+    +-------------------+-----------------------+
+    | Simu              | Camera_Simu           |
+    +-------------------+-----------------------+
+    | Pixelink          | Camera_pixelinkimaq   |
+    +-------------------+-----------------------+
+    | FLIR              | Camera_GenTL          |
+    +-------------------+-----------------------+
+    | LUCID Vision Labs | Camera_GenTL          |
+    +-------------------+-----------------------+
+
+
+    A particular case is the **Camera_Simu** subclass, associated with a ``Simu`` brand property. In this case, the code pilots a ficticious camera, normally used to test the LIVE app interface.

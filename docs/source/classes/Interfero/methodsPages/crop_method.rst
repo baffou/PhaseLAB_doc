@@ -1,3 +1,5 @@
+:orphan:
+
 **crop** (Interfero class method) |subTitle| Crop the image and reference interferograms. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

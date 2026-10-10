@@ -5,7 +5,7 @@ Constructor
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
         :class: custom-code
@@ -13,7 +13,7 @@ Constructor
         obj = Interfero()
         obj = Interfero(n)
         obj = Interfero(fileName, MI)
-        obj = Interfero(mat, MI)
+        obj = Interfero(img, MI)
         obj = Interfero(___,Name,Value)
 
 
@@ -25,7 +25,7 @@ Constructor
 
     |hr|
 
-    :matlab:`objList = Interfero(n)` create a *n*-vector ``objList`` of empty *Interfero* objects.
+    :matlab:`objList = Interfero(n)` create a (n,1)-vector ``objList`` of empty *Interfero* objects. This line is equivalent to :matlab:`objList = Interfero(N=1)`.
 
     |hr|
 
@@ -33,12 +33,35 @@ Constructor
 
     |hr|
 
-    :matlab:`obj = Interfero(mat, MI)` creates a *Interfero* object ``obj`` from a matrix ``mat`` and a given |Microscope| object ``MI``.
+    :matlab:`obj = Interfero(img, MI)` creates a *Interfero* object ``obj`` from a matrix ``img`` and a given |Microscope| object ``MI``.
 
     |hr|
 
-    The *Interfero* constructor accepts *Name-Value* options. 
+    
 
+
+    .. raw:: html
+        
+        <p class="title">Name-value arguments</p>
+    
+    .. note::
+        
+        Specify optional pairs of arguments as ``Name1 = Value1, ..., NameN = ValueN``, where ``Name`` is the argument name and ``Value`` is the corresponding value. Name-value arguments must appear after other arguments, but the order of the pairs does not matter.
+
+        Example: :matlab:`Interfero(___,'gpu',true)`
+    
+
+    - :matlab:`N`
+
+        :matlab:`Interfero(___,'N',n)` creates a column vector of ``n`` empty interferograms.
+
+    - :matlab:`remote`
+
+        :matlab:`Interfero(___,'remote',bool)` : ``bool=false`` is the normal mode (default value). Nothing special. ``bool=true`` means that the interferograms are not loaded in the object. Just their location on the hard disk is loaded, as a means to save space in the RAM. The actual content of the images will only be read when using the :ref:`QLSIprocess <The_QLSIprocess_method>` method.
+
+    - :matlab:`gpu`
+
+        :matlab:`Interfero(___,'gpu',bool)` : ``bool=false`` is the normal mode (default value). When calling the :ref:`QLSIprocess <The_QLSIprocess_method>` method, the interferograms will be processed using the CPU of the computer. if ``bool=true`` , when calling the :ref:`QLSIprocess <The_QLSIprocess_method>` method, the interferograms will be processed using the GPU of the computer, if any. This option is supposed to yield faster processing.
 
     .. raw:: html
         
@@ -87,10 +110,11 @@ Constructor
 
         .. code-block:: matlab
 
-            CGcam = CGcamera('Silios_mono');
-            MI = Microscope(100, 200, CGcam, 'PhaseLIVE'); % creates a microscope with 100x magnification
+            CGcam = CGcamera('sC8-830');
+            MI = Microscope(100, 200, CGcam, 'PhaseLAB'); % creates a microscope with 100x magnification
             
             Itf = importItfRef('data', MI);  % creates the Interfero object
             
-     Itf is a vector of interferograms, and the reference are automatically detected provided a software (here |PhaseLIVE|) correctly indicated when defining the microscope ``MI``.
+     Itf is a vector of interferograms, and the reference are automatically detected provided a software (here |PhaseLAB|) correctly indicated when defining the microscope ``MI``.
+
 

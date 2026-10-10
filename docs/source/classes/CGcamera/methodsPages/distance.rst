@@ -1,3 +1,5 @@
+:orphan:
+
 **distance** (CGcamera class method) |subTitle| Returns the effective grating-camera distance. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

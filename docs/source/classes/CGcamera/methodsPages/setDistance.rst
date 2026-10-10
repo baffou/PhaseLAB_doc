@@ -1,3 +1,5 @@
+:orphan:
+
 **setDistance** (CGcamera class method) |subTitle| Sets the grating-camera distance. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

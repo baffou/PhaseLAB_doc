@@ -5,15 +5,17 @@ The Dipole class
 
 *Dipole* is a variable class (not a handle class!).
 
+It represents an optical radiating dipole in the object space of the microscope.
+
 .. warning::
 
-    Unlike *handle* classes, with a *variable* class, the methods do not modify the object itself. For instance, :matlab:`DI.moveTo('x',1e-6)` does not affect ``DI``. One should write :matlab:`DI = DI.moveTo('x',1e-6);` or  :matlab:`DI2 = DI.moveTo('x',1e-6);`.
+    Unlike *handle* classes, with a *variable* class, the methods do not modify the object itself. For instance, :matlab:`DI.moveTo('x',1e-6)` does not affect ``DI``. One should write :matlab:`DI = DI.moveTo('x',1e-6);` or  :matlab:`DI2 = DI.moveTo('x',1e-6);`. Also, :matlab:`DI2 = DI;` creates a new, independent object.
 
 
 Properties
 ----------
 
-.. list-table:: Public properties
+.. list-table:: Read-only  properties
     :widths: 30 30 30 100 
     :header-rows: 1
     :align: center
@@ -62,17 +64,6 @@ Properties
       - *double*
       - 
       - refractive index of the surroundings
-
-
-.. list-table:: Read-only properties
-    :widths: 30 30 30 100 
-    :header-rows: 1
-    :align: center
-
-    * - name
-      - type
-      - dependence
-      - description
     * - ``lambda``
       - double
       - 
@@ -97,7 +88,18 @@ Properties
       - double
       - 
       - Mie absprotion cross section
-
+    * - ``epsTensor``
+      - (3,3) double
+      - 
+      - Permittivity tensor of the material
+    * - ``chiTensor``
+      - (3,3) double
+      - 
+      - Susceptibility tensor of the material
+    * - ``alphaTensor``
+      - double
+      - 
+      - Polarizability tensor of the particle
 
 .. include:: Dipole/Dipole_constructor.txt
 

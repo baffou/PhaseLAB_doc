@@ -1,3 +1,5 @@
+:orphan:
+
 **D2Wnorm** (ImageQLSI class method) |subTitle| Returns the second derivative (Lapacian) of the OPD image of the *ImageQLSI* object. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

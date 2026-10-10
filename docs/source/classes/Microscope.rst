@@ -5,6 +5,8 @@ The Microscope class
 
 *Microscope* is a handle class.
 
+A *Microscope* object represents an experimental microscope, containing a camera, an objective lens, a tube lens, a relay-lens, and a cross-grating.
+
 Properties
 ----------
 
@@ -37,6 +39,14 @@ Properties
      - *double*
      - 0
      - defocus
+   * - ``To``
+     - *double*
+     - 
+     - Ambient temperature
+   * - ``refl``
+     - *logical*
+     - false
+     - Microscope in reflection mode
 
 
 .. list-table:: Read-only properties
@@ -50,6 +60,12 @@ Properties
    * - ``M``
      - double
      - magnification of the microscope
+   * - ``Mobj``
+     - double
+     - magnification of the objective (can be different from M, depending on the tube lens)
+   * - ``NA``
+     - double
+     - Numerical aperture of the objective
    * - ``pxSize``
      - double
      - pixel size of the image

@@ -1,3 +1,5 @@
+:orphan:
+
 **sigmaTheo** (Microscope class method) |subTitle| returns the theoretical noise standard deviation of the OPD image. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -21,3 +21,6 @@ PhaseLAB_simuBacteria
 CGrotate de la classe CGcamera
 
 Ajoutuer tous les arguments de CGMinSilico
+
+- Doc Illumination, the possibility to specify a vector of wavelengths
+IL = Illumination([400,500])

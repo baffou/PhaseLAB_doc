@@ -1,3 +1,5 @@
+:orphan:
+
 **sum** (Interfero class method) |subTitle| Return the sum of interferograms. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

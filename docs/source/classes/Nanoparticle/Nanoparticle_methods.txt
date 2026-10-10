@@ -1,0 +1,18 @@
+
+Nanoparticle methods
+--------------------
+
+.. include:: /classes/Nanoparticle/methods/figure.rst
+
+.. include:: /classes/Nanoparticle/methods/shine.rst
+
+.. include:: /classes/Nanoparticle/methods/imaging.rst
+
+.. include:: /classes/Nanoparticle/methods/moveTo.rst
+
+.. include:: /classes/Nanoparticle/methods/moveBy.rst
+
+.. include:: /classes/Nanoparticle/methods/rotate.rst
+
+.. include:: /classes/Nanoparticle/methods/meanPos.rst
+

@@ -1,0 +1,7 @@
+
+Monochromator methods
+---------------------
+
+.. include:: /classes/Monochromator/methods/moveTo.rst
+
+

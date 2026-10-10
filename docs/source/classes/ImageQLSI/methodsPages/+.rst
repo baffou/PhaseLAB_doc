@@ -1,3 +1,5 @@
+:orphan:
+
 \+ (ImageQLSI class method) |subTitle| Defines the addition between two *ImageQLSI* objects: ``IM1 + IM2``. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

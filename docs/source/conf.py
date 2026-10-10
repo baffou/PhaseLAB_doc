@@ -18,12 +18,54 @@ release = '4.0'
 import os
 import sys
 
+
+
+
+# Petite correction pou rle lexer matlab
+from pygments.lexers.matlab import MatlabLexer
+from pygments.lexer import bygroups
+from pygments.token import Whitespace, Name
+from sphinx.highlighting import lexers
+
+
+class FixedMatlabLexer(MatlabLexer):
+
+    tokens = dict(MatlabLexer.tokens)
+    tokens['root'] = list(MatlabLexer.tokens['root'])
+
+    # Fix Pygments MATLAB command-form parsing:
+    # spaces/tabs are allowed here, but NOT newlines.
+    tokens['root'][9] = (
+        rf'(?:^|(?<=;))([ \t]*)(\w+)([ \t]+)'
+        rf'(?!=|\(|{MatlabLexer._operators}[ \t]|[ \t])',
+        bygroups(Whitespace, Name, Whitespace),
+        'commandargs'
+    )
+
+
+lexers['matlab'] = FixedMatlabLexer()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 sys.path.insert(0, os.path.abspath('./_ext'))
 
 
 sys.path.append(os.path.abspath("./_ext"))
 
-# extensions = ['sphinx_panels', 'sphinxcontrib.matlab', 'sphinx.ext.extlinks', 'sphinx_tabs.tabs']
+# extensions = ['sphinx_panels',  'sphinx.ext.extlinks', 'sphinx_tabs.tabs']
 extensions = ['sphinx_design', 'sphinx.ext.extlinks', 'sphinx_tabs.tabs']
 # , "sphinx_design"
 myst_enable_extensions = ["colon_fence"]
@@ -128,6 +170,14 @@ rst_prolog = """
 
 .. |ImageQLSI| replace:: :ref:`ImageQLSI <The_ImageQLSI_class>`
 
+.. |ImageQLSIpolar| replace:: :ref:`ImageQLSIpolar <The_ImageQLSIpolar_class>`
+
+.. |ImageJonesMatrix| replace:: :ref:`ImageJonesMatrix <The_ImageJonesMatrix_class>`
+
+.. |ImageTransmittance| replace:: :ref:`ImageTransmittance <The_ImageTransmittance_class>`
+
+.. |CameraLive| replace:: :ref:`CameraLive <The_CameraLive_class>`
+
 .. |ImageT| replace:: :ref:`ImageT <The_ImageT_class>`
 
 .. |Interfero| replace:: :ref:`Interfero <The_Interfero_class>`
@@ -139,7 +189,6 @@ rst_prolog = """
 .. |Medium| replace:: :ref:`Medium <The_Medium_class>`
 
 .. |MediumT| replace:: :ref:`MediumT <The_Medium_class>`
-
 
 .. |importItfRef| replace:: |c| :ref:`importItfRef <The_importItfRef_function>` |/c|
 

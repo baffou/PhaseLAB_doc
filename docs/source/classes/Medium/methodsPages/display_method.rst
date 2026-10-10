@@ -1,6 +1,8 @@
+:orphan:
+
 .. _displayMedium:
 
-**Display** (Medium class method) |subTitle| Dispay the properties of a *Medium* object. |/subTitle|
+**display** (Medium class method) |subTitle| Displays the properties of a **Medium** object. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 

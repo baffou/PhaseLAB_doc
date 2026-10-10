@@ -2,7 +2,7 @@
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 
@@ -25,8 +25,12 @@
 
     If an output argument ``obj2`` is specified, ``obj`` is not modified, but duplicated.
     
+    .. note::
+
+        If it exists, it also removes the offset of the Reference image.
+
     .. warning::
 
-        It only removes the offset to the ``Itf`` property, not to the reference ``Ref.Itf``.
+        Make sure you don't use this method twice. It is recommended to rather measure a dark image, and subtract it to the interferogram images using the option :matlab:`'DarkImage' = Itf_dark` in the :ref:`QLSIprocess <The_QLSIprocess_method>` method.
 
 

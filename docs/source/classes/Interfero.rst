@@ -5,6 +5,8 @@ The Interfero class
 
 *Interfero* is a handle class.
 
+An *Interfero* object represents an QLSI interferogram.
+
 Properties
 ----------
 
@@ -18,7 +20,7 @@ Properties
      - default
      - description
    * - ``Itf``
-     - (:,:) double
+     - (:,:) *double*
      - 
      - interferogram data
    * - ``Ref``
@@ -26,21 +28,25 @@ Properties
      - 
      - reference interferogram
    * - ``fileName``
-     - char
+     - *char*
      - 
      - interferogram file name on the computer
    * - ``path``
-     - char
+     - *char*
      - 
      - folder of the interferogram file
    * - ``Nx``
-     - int
+     - *int*
      - 
      - Number of columns 
    * - ``Ny``
-     - int
+     - *int*
      - 
      - Number of rows
+   * - ``pxSize``
+     - *double*
+     - 
+     - Pixel size at the object plane [m]
 
 .. include:: Interfero/Interfero_constructor.txt
 

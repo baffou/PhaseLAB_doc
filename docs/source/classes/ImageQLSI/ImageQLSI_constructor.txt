@@ -5,7 +5,7 @@ Constructor
 
     .. raw:: html
         
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
         :class: custom-code
@@ -25,7 +25,7 @@ Constructor
 
     |hr|
 
-    ``objList = ImageQLSI(n)`` create a *n*-vector ``objList`` of empty *ImageQLSI* objects.
+    ``objList = ImageQLSI(n)`` create a (n,1)-vector ``objList`` of empty *ImageQLSI* objects.
 
     |hr|
 
@@ -35,18 +35,15 @@ Constructor
 
     ``obj = ImageQLSI(INT, OPD, MI, IL)`` creates an *ImageQLSI* object, ``INT`` defining the intensity image, ``OPD`` the optical path difference, ``MI`` the microscope and ``IL`` the illumination.
     
-    ``INT`` an ``OPD`` can be either a matrix, or a file name (char) containing the data. ``MI`` is a |Microscope| object. ``IL`` is an |Illumination| object.
+    ``INT`` and ``OPD`` can be either a matrix, or a file name (char) containing the data. ``MI`` is a |Microscope| object. ``IL`` is an |Illumination| object.
 
     |hr|
-
-    ``ImageQLSI`` accepts *Name-Value* options. 
-
 
     .. raw:: html
             
         <p class="title">Examples</p>
     
-    .. dropdown:: **Build an ImageQLSI object by importing data*
+    .. dropdown:: **Build an ImageQLSI object by importing data**
 
         .. code-block:: matlab
 
@@ -58,8 +55,6 @@ Constructor
 
             IM = ImageQLSI(T, W, MI, IL); % creates the ImageQLSI object
             
-
-
 
     .. raw:: html
         
@@ -78,7 +73,9 @@ Constructor
 
     - :matlab:`FileName`
 
-        The ``remotePath`` option has to be used in conjonction with the ``FileName`` option, specifying the prefix of the files saved of the computer.
+        The ``remotePath`` option has to be used in parallel with the ``FileName`` option, specifying the prefix of the files saved of the computer.
 
 
+    .. note::
+        In practice, the **ImageQLSI** constructor is never used directly to build an **ImageQLSI** object. **ImageQLSI** objects usually rather originate from an interferogram and the :ref:`QLSIprocess <The_QLSIprocess_method>` method, typically using :matlab:`IM = QLSIprocess(Itf, IL)`, ``Itf`` is an |Interfero| object.
 

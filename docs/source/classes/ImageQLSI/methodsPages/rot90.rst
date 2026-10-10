@@ -1,3 +1,5 @@
+:orphan:
+
 **rot90** (ImageQLSI class method) |subTitle| Rotate the images of the object by multiples of 90°. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

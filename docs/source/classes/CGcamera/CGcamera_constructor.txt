@@ -5,22 +5,24 @@ Constructor
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
 
         % prototypes
         obj = CGcamera();
-        obj = CGcamera(camName);
         obj = CGcamera(CGcamName);
-        obj = CGcamera(camName,CGname);
-        obj = CGcamera(camName,CGname,zoom);
+        obj = CGcamera([CamName[,CGname[,zoom]]]);
+        obj = CGcamera([Cam[,CG[,RL]]]);
 
         % examples
-        obj = CGcamera('Zyla');
-        obj = CGcamera('Silios_mono');
-        obj = CGcamera('Zyla', 'F3');
-        obj = CGcamera('Zyla', 'P2', 1.11);
+        obj = CGcamera('Makatea');
+        obj = CGcamera('Zyla5.5', 'F03');
+        obj = CGcamera('Zyla5.5', 'F03',1.11);
+        Cam = Camera('OrcaFlash')
+        CG = CrossGrating('F02');
+        RL = RelayLens(2);
+        obj = CGcamera(Cam, CG, RL);
 
     .. raw:: html
         
@@ -31,38 +33,32 @@ Constructor
     |hr|
 
 
-    :matlab:`obj = CGcamera(camName)` creates a *CGcamera* object that consists only of a camera (no relay-lens, no cross-grating). ``camName`` is a *char* that defines the camera. The camera names must correspond to the names of the files contained in the folder **spec/cameras**. For instance, :matlab:`obj = CGcamera('Zyla');`.
+    :matlab:`obj = CGcamera(CGcamName)` creates a *CGcamera* object from the name of a QLSI camera. The CGcamera name must correspond to a file name contained in the folder **spec/CGcameras**. For instance, :matlab:`obj = CGcamera('Makatea');`.
 
     |hr|
 
-
-    :matlab:`obj = CGcamera(CGcamName)` creates a *CGcamera* object from the name of a QLSI device. The CGcamera names must correspond to the names of the files contained in the folder **spec/CGcameras**. For instance, :matlab:`obj = CGcamera('Silios_mono');`.
-
-    |hr|
-
-
-    :matlab:`obj = Interfero(camName, CGname)` creates a *CGcamera* object ``obj`` from the specification of a camera and a cross-grating. ``camName`` is the *char* name of the camera, and ``CGname`` is the *char* name of the cross-grating. The possible names of camera and cross-grating are the names of the files contained in the folder **spec/cameras** and **spec/CG**. For instance, :matlab:`obj = CGcamera('Zyla','P4');`.
+    :matlab:`obj = Interfero(camName, CGname)` creates a *CGcamera* object ``obj`` from the specification of a camera name and a cross-grating name. ``camName`` is the *char* name of the camera, and ``CGname`` is the *char* name of the cross-grating. The possible names of camera and cross-grating are the file names contained in the folder **spec/cameras** and **spec/CG**. For instance, :matlab:`obj = CGcamera('Zyla','P4');`.
 
     |hr|
 
-    :matlab:`obj = Interfero(camName, CGname, zoom)` creates a *CGcamera* object ``obj`` from the specification of a camera, a cross-grating, and a zoom. ``camName`` is the *char* name of the camera, ``CGname`` is the *char* name of the cross-grating, and ``zoom`` is a number that corresponds to the zoom of a relay lens. The specification of a zoom value leads to the creation of a non-empty ``RL`` properties in the *CGcamera* object, i.e., it creates a relay-lens.
+    :matlab:`obj = CGcamera(camName, CGname, zoom)` creates a *CGcamera* object ``obj`` from the specification of a camera name, a cross-grating name, and a zoom value. ``camName`` is the *char* name of the camera, ``CGname`` is the *char* name of the cross-grating, and ``zoom`` is a number that corresponds to the zoom of a relay lens. The specification of a zoom value leads to the creation of a non-empty ``RL`` properties in the *CGcamera* object, i.e., it creates a relay-lens.
 
     .. raw:: html
         
         <p class="title">CGcamera spec files</p>
 
-    Each pre-defined CGcamera is associated with a file located in the **spec/CGcameras** folder. This file contains all the characteristics of the CG camera. Here is for instance a copy of the Silios_mono.txt file:
+    Each pre-defined CGcamera is associated with a file located in the **spec/CGcameras** folder. This file contains all the characteristics of the CG camera. Here is for instance a copy of the Makatea.txt file:
 
     .. code-block::
-        :caption: Silios_mono.txt
+        :caption: Makatea.txt
 
         dexel size: 5.5e-6
         Gamma: 33e-6
         Nx: 2048
         Ny: 2048
-        distance: 0.75e-3
+        distance: 7.44e-4
         CGdepth: 550e-9
-        CGangle: 57.0078
+        CGangle: 54.6616
 
     The folder **CGcameras** contains *.txt* files associated to each predefined camera, namely:
 
@@ -80,21 +76,15 @@ Constructor
 
     - *Sid4-Element-Sona.txt*
 
-        Our Sid4-Element from Phasics, associated with a Sona camera from Andor.
+        Our Sid4-Element from Phasics, associated with a Sona camera from Andor, separated by a 2x relay lens.
 
     - *Sid4Element.txt*
 
-        Our Sid4-Element from Phasics, associated with a Zyla 5.5 camera from Andor.
-
-    - *Silios_mono.txt*
-
-        The `Makatea <https://www.silios.com/makatea-cam>`_ wavefront camera from Silios.
+        Our Sid4-Element from Phasics, associated with a Zyla 5.5 camera from Andor, separated by a 2x relay lens.
 
 
-    If other QLSI cameras are being used, new custom files can be made, following this pattern and placed in the **spec/CGcamera** folder.
 
-
-    If other QLSI cameras are being used, new custom files can be made, following this pattern. Any new file can be saved in the **spec/CGcamera** folder, or in any other folder known by Matlab. However, in order to simply keep track of the updated versions of PhaseLAB via Github, I suggest to store any custom-made file to a separate folder, out of the |PhaseLAB| package, and include this directory in the Matlab paths. Also, feel free to contact me to ask for any file addition/modification in the public Github version of |PhaseLAB| that would suit your studies.
+    If other QLSI cameras are being used, new custom files can be made, following this pattern and placed in the **spec/CGcamera** folder. Any new file can be saved in the **spec/CGcamera** folder, or in any other folder known by Matlab. However, in order to simply keep track of the updated versions of PhaseLAB via Github, I suggest to store any custom-made file in a separate folder, out of the |PhaseLAB| package, and include this directory in the Matlab paths. Also, feel free to contact me to ask for any file addition/modification in the public Github version of |PhaseLAB| that would suit your studies.
 
 
 

@@ -1,3 +1,5 @@
+:orphan:
+
 **figure** (Dipole class method) |subTitle| Display the dipoles. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

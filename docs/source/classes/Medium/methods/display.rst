@@ -1,8 +1,8 @@
-.. dropdown:: **display** |subTitle| Display the properties of the object. |/subTitle|
+.. dropdown:: **display** |subTitle| Displays the properties of the object. |/subTitle|
     
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 

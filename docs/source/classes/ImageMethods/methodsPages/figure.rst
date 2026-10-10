@@ -1,3 +1,5 @@
+:orphan:
+
 **figure** (ImageEM & ImageQLSI classes method) |subTitle| Display the PhaseLAB GUI |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

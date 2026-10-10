@@ -1,3 +1,5 @@
+:orphan:
+
 **pxSize** (ImageEM & ImageQLSI classes method) |subTitle| Returns the image pixel size at the sample plane. |/subTitle| 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

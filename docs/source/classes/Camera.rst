@@ -10,7 +10,7 @@ The *Camera* object represents the basis camera.
 Properties
 ----------
 
-.. list-table:: Public properties
+.. list-table:: Private properties
   :widths: 30 30 30 100 
   :header-rows: 1
   :align: center
@@ -35,12 +35,24 @@ Properties
     - *integer*
     - 25000
     - Full-well-capacity :math:`w`
+  * - ``brand``
+    - *char*
+    - 
+    - Brand of the camera
   * - ``model``
     - *char*
     - 
     - Model of the camera
+  * - ``offset``
+    - *double*
+    - 0
+    - Offset in the dark image
+  * - ``bitDepth``
+    - *double*
+    - 
+    - Maximum bit depth (12-bit, 16-bit, ...)
   * - ``colorChannels``
-    - 1, 2, 3
+    - *Integer*, 1, 2 or 3
     - 1
     - Number of color channels
   * - ``crosstalk12``

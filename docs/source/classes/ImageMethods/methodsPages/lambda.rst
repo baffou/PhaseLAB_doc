@@ -1,3 +1,5 @@
+:orphan:
+
 **lambda** (ImageEM & ImageQLSI classes method) |subTitle| lambda |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

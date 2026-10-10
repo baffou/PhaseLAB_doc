@@ -2,13 +2,13 @@
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 
         % general pattern
-        obj2 = obj.shine(IL);
-        objList2 = objList.shine(IL);
+        obj = obj.shine(IL);
+        objList = objList.shine(IL);
 
     .. raw:: html
       

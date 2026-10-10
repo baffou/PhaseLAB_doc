@@ -2,7 +2,7 @@
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
 
@@ -16,11 +16,11 @@
       
         <p class="title">Description</p>
 
-    ``obj.level0()`` adjusts the offset of the image. More precisely. This method asks for an area on the image, the average value of which should be zero. The method applies an offset to the whole image to satifies this condition. Many options can be specified to tell how this area is selected. See below.
+    ``obj.level0()`` adjusts the offset of the image. More precisely. This method asks for an area on the image, the average value of which should be zero. The method applies an offset to the whole image to satisfy this condition. Many options can be specified to tell how this area is selected. See below.
 
     |hr|
 
-    Object *vectors* can also be used with this method. The transformation applies then to all the objects of the vector, with the same reference area.
+    Object *vectors* can also be used with this method. The transformation applies then to all the objects of the vector, with the same reference area and same options.
 
     |hr|
 
@@ -61,6 +61,11 @@
     - :matlab:`'params'`
 
         One can also direclty write the coordinates of the area, using :matlab:`level0(___,'params', [x1, x2, y1, y2])`. In this case, no figure opens.
+
+    - :matlab:`'method'`
+
+        Once the area is defined, there are different ways to extract the zero value on this area. The ``method`` option tells how to proceed. :matlab:`'method = mean'` simply computes the average value over the selected area. :matlab:`'method = median'` computes the median value. :matlab:`'method = boundaryMedian'` compute the median over the values at the edges of the area.  :matlab:`'method = histrogramMode'` compute the value that corresponds to the maximum of the histogram over the selected area.
+
 
     Here is an example of a code that manually ajusts the offset of a first object, and applies automatically the same adjustment to a second object:
 

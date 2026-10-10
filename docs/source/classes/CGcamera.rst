@@ -5,7 +5,7 @@ The CGcamera class
 
 *CGcamera* is a handle class.
 
-The *CGcamera* object represents the imaging system. It is composed of a regular camera, a cross-grating, and possibly a relay lens in between. Each of these three components are also represented by objects, respectively from the classes *Camera*, *CrossGrating*, and *RelayLens*.
+The *CGcamera* object represents the QLSI camera system. It is composed of a regular camera, a cross-grating, and possibly a relay lens in between. Each of these three components are also represented by objects, respectively from the classes *Camera*, *CrossGrating*, and *RelayLens*.
 
 Properties
 ----------
@@ -32,14 +32,10 @@ Properties
       - *CrossGrating*
       - 
       - Cross-grating
-    * - ``FileName``
+    * - ``fileName``
       - *char*
       - 
       - FileName of the CGcamera, if any
-    * - ``CGpos``
-      - *double*
-      - 0
-      - Grating-camera distance :math:`d` \[m\]
 
 
 .. list-table:: Read-only properties
@@ -50,6 +46,9 @@ Properties
     * - name
       - type
       - description
+    * - ``CGpos``
+      - *double*
+      - Grating-camera distance :math:`d` \[m\]
     * - ``dxSize``
       - double
       - Effective dexel size (divided by the |RL| zoom) \[m\]
@@ -58,11 +57,11 @@ Properties
       - zeta factor :math:`\zeta=\Gamma Z/2p`
     * - ``zoom``
       - double
-      - zoom of the |RL| system :math:`Z`
+      - zoom :math:`Z` of the |RL| system
 
 .. note::
 
-    The property ``dxSize`` is a dependent attribute that returns the **effective** dexel size, which is not necessarily the actual dexel size of the camera sensor. When there is a |RL|, applying a zoom :math:`Z` to the system, the {|RL|, camera} system is equivalent to a single camera with a dexel size divided by the zoom. This method returns the dexel size fo this equivalent camera, called the effective dexel size.
+    The property ``dxSize`` is a dependent attribute that returns the **effective** dexel size, which is not necessarily the actual dexel size of the camera sensor. When there is a |RL|, applying a zoom :math:`Z` to the system, the {|RL|, camera} system is equivalent to a single camera with a dexel size divided by the zoom. This method returns the dexel size of this equivalent camera, called the effective dexel size.
     
 
 

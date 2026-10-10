@@ -1,0 +1,23 @@
+
+CameraLive methods
+------------------
+
+.. include:: /classes/CameraLive/methods/turn.rst
+
+.. include:: /classes/CameraLive/methods/setMode.rst
+
+.. include:: /classes/CameraLive/methods/startAcquisition.rst
+
+.. include:: /classes/CameraLive/methods/stopAcquisition.rst
+
+.. include:: /classes/CameraLive/methods/acquire_continuous.rst
+
+.. include:: /classes/CameraLive/methods/acquire_fixed.rst
+
+.. include:: /classes/CameraLive/methods/setCameraROI.rst
+
+.. include:: /classes/CameraLive/methods/setExpTime.rst
+
+.. include:: /classes/CameraLive/methods/getROI.rst
+
+.. include:: /classes/CameraLive/methods/setupSDK.rst

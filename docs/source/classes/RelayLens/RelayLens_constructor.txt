@@ -1,0 +1,57 @@
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+      
+        <p class="title">Syntax</p>
+
+    .. code-block:: matlab
+
+        % prototypes
+        obj = RelayLens();
+        obj = RelayLens(model);
+        obj = RelayLens(zoom);
+ 
+        % examples
+        obj = RelayLens();
+        obj = RelayLens('VZM300');
+        obj = RelayLens(1.11);
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    :matlab:`obj = RelayLens()` creates an empty *RelayLens* object.
+
+    |hr|
+
+    :matlab:`obj = RelayLens(model)` creates a *RelayLens* object, where ``model`` is a *char* that defines the relay lens. The model name must correspond to one of the names of the .json files contained in the folder **spec/RL**. For instance, :matlab:`obj = Camera('VZM300');`.
+
+    |hr|
+
+    :matlab:`obj = RelayLens(zoom);` creates a *RelayLens* object with a zoom value specified by ``zoom``.
+
+    |hr|
+
+
+    .. raw:: html
+        
+        <p class="title">CGcamera spec files</p>
+
+
+    The folder **spec/RL** contains *.json* files associated to each predefined relay lens. Here is for instance a copy of the *VZM300.json* file:
+
+    .. code-block:: json
+
+        {"class":"RelayLens",
+        "model": "VZM300",
+        "zoom": 1,
+        "zoomRange": [0.75, 3]
+        }
+
+    All these parameters are respectively the class, the model, the zoom and the accessible zoom range when the zoom is tunable.
+
+
+    If other relay lenses are being used, new custom files can be made, following this pattern. Any new file can be saved in the **spec/RL** folder, or in any other folder known by Matlab. However, in order to simply keep track of the updated versions of PhaseLAB via Github, I suggest to store any custom-made file to a separate folder, out of the |PhaseLAB| package, and include this directory in the Matlab paths. Also, feel free to contact me to ask for any file addition/modification in the public Github version of |PhaseLAB| that would suit your studies.

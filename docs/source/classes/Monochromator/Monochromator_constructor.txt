@@ -1,0 +1,30 @@
+
+
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+      
+        <p class="title">Syntax</p>
+
+    .. code-block:: matlab
+
+        % prototypes
+        IL = Illumination(lambda);
+        MO = IL.makeAlive(serial);
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    :matlab:`Monochromator()` creates an empty *Monochromator* object.
+
+    |hr|
+
+    A monochromator object is not supposed to be created by its own constructor, but rather from an |Illumination| object, using :matlab:`MO = IL.makeAlive(serial);`, where ``serial`` is the product identifier.
+
+    |hr|
+

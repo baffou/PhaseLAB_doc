@@ -1,3 +1,5 @@
+:orphan:
+
 **dxSize** (ImageEM & ImageQLSI classes method) |subtitle| Returns the dexel size (i.e. the camera pixel size).|/subtitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

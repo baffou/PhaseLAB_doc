@@ -1,0 +1,21 @@
+
+
+ImageJonesMatrix methods
+------------------------
+
+.. include:: /classes/ImageJonesMatrix/methods/c.rst
+
+.. include:: /classes/ImageJonesMatrix/methods/figure.rst
+
+.. include:: /classes/ImageJonesMatrix/methods/biref.rst
+
+.. include:: /classes/ImageJonesMatrix/methods/dichro.rst
+
+.. include:: /classes/ImageJonesMatrix/methods/J2Schur.rst
+
+.. include:: /classes/ImageJonesMatrix/methods/Schur2T.rst
+
+.. include:: /classes/ImageJonesMatrix/methods/J2T.rst
+
+
+

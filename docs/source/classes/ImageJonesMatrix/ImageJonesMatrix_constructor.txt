@@ -1,0 +1,38 @@
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+        
+        <p class="title">Syntax</p>
+
+    .. code-block:: matlab
+        :class: custom-code
+
+        obj = ImageJonesMatrix()
+        obj = ImageJonesMatrix(mat)
+        obj = ImageJonesMatrix({mat1, mat2, mat3, ...})
+        obj = ImageJonesMatrix(matStack)
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    ``obj = ImageJonesMatrix()`` creates an empty *ImageJonesMatrix* object.
+
+    |hr|
+
+    ``obj = ImageJonesMatrix(img)`` creates a *ImageJonesMatrix* object ``obj`` an 2*2 double matrix ``mat``.
+
+    |hr|
+
+    ``obj = ImageJonesMatrix({mat1, mat2, mat3, ...})`` creates a *ImageJonesMatrix* object array ``obj`` from a cell array of :math:`2\times2` matrices.
+
+    |hr|
+
+    ``obj = ImageJonesMatrix(matStack)`` creates a **ImageJonesMatrix** object array ``obj`` from a :math:`2\times2\times Ny\times Nx` double array.
+
+    |hr|
+

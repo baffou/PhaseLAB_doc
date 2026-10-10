@@ -3,3 +3,5 @@ Camera methods
 --------------
 
 .. include:: /classes/Camera/methods/crop.rst
+
+.. include:: /classes/Camera/methods/makeALive.rst

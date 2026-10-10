@@ -1,3 +1,5 @@
+:orphan:
+
 **square** (ImageQLSI class method) |subTitle| Transforms rectangle images to square images by cropping. |/subTitle|
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

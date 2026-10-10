@@ -6,7 +6,7 @@ The |c| opendx0 |/c| function
 
 .. raw:: html
     
-    <p class="title">Synthax</p>
+    <p class="title">Syntax</p>
 
 .. code-block:: matlab
 
@@ -68,7 +68,7 @@ displays the OPD image of the :matlab:`IM` object. If :matlab:`IM` is an **array
    :width: 400
    :align: center
 
-One can also display more than one image per figure. For instance, to display both wavefront and intensity, the synthax is:
+One can also display more than one image per figure. For instance, to display both wavefront and intensity, the syntax is:
 
 .. code-block:: matlab
     :linenos:

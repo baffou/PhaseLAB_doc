@@ -1,8 +1,8 @@
-.. dropdown:: **Jones** |subTitle| Applies a Jones matrix to an *Illumination* object. |/subTitle|
+.. dropdown:: **Jones** |subTitle| Applies aseries of Jones matrices to an *Illumination* object. |/subTitle|
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 

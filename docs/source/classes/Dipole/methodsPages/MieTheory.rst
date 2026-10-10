@@ -1,3 +1,5 @@
+:orphan:
+
 **MieTheory** (Dipole class method) |subTitle| Returns the polarisability and cross sections. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

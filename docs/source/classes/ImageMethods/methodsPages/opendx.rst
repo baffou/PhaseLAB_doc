@@ -1,3 +1,5 @@
+:orphan:
+
 .. _The_opendx_method:
 
 **opendx** (ImageEM & ImageQLSI classes method) |subTitle| opendx |/subTitle|

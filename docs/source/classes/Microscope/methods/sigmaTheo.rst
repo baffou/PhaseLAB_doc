@@ -12,7 +12,7 @@
         :caption: code example
 
         >> OB = Objective(100,1.3,'Olympus'); 
-        >> MI = Microscope(OB,200,'Silios_mono');
+        >> MI = Microscope(OB,200,'Makatea');
         >> MI.sigmaTheo
 
         ans =

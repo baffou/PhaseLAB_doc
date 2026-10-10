@@ -1,3 +1,5 @@
+:orphan:
+
 .. _MakeMoviedx_method:
 
 **MakeMoviedx** (ImageEM & ImageQLSI classes method) |subTitle| MakeMoviedx |/subTitle|

@@ -1,0 +1,60 @@
+Constructor
+-----------
+
+.. dropdown:: **Constructor**
+
+    .. raw:: html
+      
+        <p class="title">Syntax</p>
+
+    .. code-block:: matlab
+
+        % protoypes
+        obj = Nanoparticle()
+        obj = Nanoparticle(mat, geom, dims)
+        obj = Nanoparticle(mat, geom, dims, "meshParam", a)
+
+        %% examples
+        NP = Nanoparticle(5);
+        % Au nanosphere
+        NP(1) = Nanoparticle('Au', 'sphere', 25e-9, "meshParam", 5e-9);
+        % SiO2 nanocube
+        NP(2) = Nanoparticle('SiO2', 'cube', 50e-9, "meshParam", 5e-9);
+        % Glass nanorod
+        NP(3) = Nanoparticle(1.5, 'rod', [100e-9, 20e-9], "meshParam", 4e-9);
+        % Birefringent parallelepiped
+        NP(4) = Nanoparticle([1.5, 1.2, 1.2], 'cuboid', [40e-9, 30e-9, 20e-9], "meshParam", 3e-9);
+        % Glass cylinder with some absorption
+        NP(5) = Nanoparticle(1.5+0.01i, 'cylinder', [30e-9, 30e-9], "meshParam", 4e-9);
+        
+        NP.figure
+
+    .. image:: /images/Nanoparticles.png
+        :width: 1200
+        :align: center
+
+
+    .. raw:: html
+        
+        <div class="title">Description</div>
+
+    :matlab:`obj = Nanoparticle()` creates an empty *Nanoparticle* object.
+
+    |hr|
+
+
+    :matlab:`obj = Nanoparticle(mat, geom, dims)` creates a *Nanoparticle* object with the specified material ``mat``, geometry ``geom``, and dimensions ``dims``.
+
+    - If ``mat`` is text, it specifies the nanoparticle material. The list of available materials can be obtained using :py:func:`materialList()`. If it is numeric, it corresponds to a refractive index, either a scalar or a 3-vector for an anisotropic material.
+    - ``geom`` specifies the nanoparticle shape. Available geometries are ``'sphere'``, ``'ellipsoid'``, ``'cube'``, ``'cuboid'``, ``'cylinder'``, and ``'rod'``.
+    - ``dims`` specifies the nanoparticle dimensions as a scalar or a vector of two or three elements, depending on the selected geometry:
+
+        - ``'sphere'``: radius.
+        - ``'ellipsoid'``: three semi-axis lengths.
+        - ``'cube'``: edge length.
+        - ``'cuboid'``: three edge lengths.
+        - ``'cylinder'``: radius and height.
+        - ``'rod'``: length and radius of curvature of the rounded ends.
+
+
+    |hr|

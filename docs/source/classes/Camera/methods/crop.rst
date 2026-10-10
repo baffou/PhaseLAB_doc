@@ -1,9 +1,9 @@
 
-.. dropdown:: **crop** |subTitle| set the sensor dimension. |/subTitle|
+.. dropdown:: **crop** |subTitle| Sets the sensor dimension. |/subTitle|
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
     .. code-block:: matlab
 

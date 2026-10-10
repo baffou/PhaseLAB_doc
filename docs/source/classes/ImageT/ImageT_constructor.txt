@@ -5,13 +5,15 @@ Constructor
 
     .. raw:: html
         
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
 
     .. code-block:: matlab
         :class: custom-code
 
         obj = ImageT()
-        obj = ImageT(W, TMP, H)
+        obj = ImageT(TMP, HSD) 
+        obj = ImageT(TMP, HSD, W) 
+        obj = ImageT(TMP, HSD, W, T) 
 
     .. raw:: html
         
@@ -21,19 +23,6 @@ Constructor
 
     |hr|
 
-    ``obj = ImageT(W, TMP, H)`` creates an *ImageT* object, ``W`` defining the OPD image, ``TMP`` the temperature image, and ``H`` the heat source density image. Each of these inputs is optional.
-    
+    ``obj = ImageT(TMP, H, W, T)`` creates an *ImageT* object, ``TMP`` defining the temperature image, ``HSD`` the heat source density image, ``W`` the intitial waverfront/OPD image from which the temperaure and heat source density image have been calculated, and ``T`` the initial transmittance image. Each of these inputs is optional.
 
-    .. raw:: html
-            
-        <p class="title">Examples</p>
-    
-    .. dropdown:: **Build an ImageT object by importing data**
-
-        .. code-block:: matlab
-
-            T = readMatrix('data/T.txt');
-            W = readMatrix('data/W.txt');
-
-            IM = ImageT(T, W); % creates the ImageT object
-
+    In principle, this constructor should never be used. **ImageT** objects are automatically created by the :ref:`TMPprocess <The_TMPprocess_method>` method of the **ImageQLSI** class.

@@ -4,7 +4,7 @@
 
     .. raw:: html
       
-        <p class="title">Synthax</p>
+        <p class="title">Syntax</p>
     
 
     .. code-block:: matlab

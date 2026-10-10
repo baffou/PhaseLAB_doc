@@ -1,3 +1,5 @@
+:orphan:
+
 **square** (Interfero class method) |subTitle| Transforms rectangle interferograms to square interferograms by cropping. |/subTitle|
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
