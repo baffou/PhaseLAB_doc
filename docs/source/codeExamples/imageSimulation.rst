@@ -22,7 +22,7 @@ Image simulation
         DI = Dipole('Au',radius);
         DI = DI.shine(IL);
 
-        IM0 = imaging(DI,IL,MI,Npx);
+        IM0 = imaging(DI,MI,"Npx",Npx);
 
         IM0.figure
 

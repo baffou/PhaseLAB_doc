@@ -1,4 +1,4 @@
-.. dropdown:: sizeof |subTitle| Returns aand displays the size of the object occupied on the RAM of the computer, in Kilobytes (Kb). |/subTitle|
+.. dropdown:: sizeof |subTitle| Returns and displays the size of the object occupied on the RAM of the computer, in Kilobytes (Kb). |/subTitle|
 
     .. raw:: html
       

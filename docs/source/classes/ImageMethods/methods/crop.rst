@@ -67,7 +67,7 @@
 
     .. code-block:: matlab
 
-        [IMc(1) params] = IM(1).crop('Center', 'Manual', 'Size', 'Manual');
+        [IMc(1), params] = IM(1).crop('Center', 'Manual', 'Size', 'Manual');
         IMc(2) = IM(2).crop('params', params);
     
     Note that this code is equivalent to:

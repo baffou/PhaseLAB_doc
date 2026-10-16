@@ -11,7 +11,8 @@ The |c| imaging |/c| function
 .. code-block:: matlab
 
     % prototype
-    IM = imaging(DIs,IL,MI,Npx)
+    IM = imaging(DIs,MI)
+    IM = imaging(DIs,MI,"Npx",N)
 
 
 .. raw:: html
@@ -24,9 +25,9 @@ Function that computes the :math:`E` field at the image plane, corresponding to 
 
 ``DIs`` is an array of |Dipole| objects.
 
-``IL`` and ``MI`` are respectively the |Illumination| and |Microscope| objects of the setup.
+``MI`` is the |Microscope| objects of the setup.
 
-``Npx`` is the size of the image (width and height).
+``N`` is the size of the image in pixels (width and height).
 
 
 .. raw:: html

@@ -18,8 +18,7 @@ Some color cameras suffer from crosstalk between neighboring dexels of different
 
 .. code-block:: matlab
 
-    Itf0 = importItfRef(folder,MI);
-    Itf = Itf0.splitColors();
+    Itf.crosstalkCorrection();
 
 
 Then, :matlab:`Itf` can be processed like a normal |Interfero| object array using the :ref:`QLSIprocess <The_QLSIprocess_method>` method:

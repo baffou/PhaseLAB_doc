@@ -22,7 +22,7 @@ lexique rst
 
     %% BUILDING OF THE MICROSCOPE -- Microscope(OBJ,tl_f,Sid4model,software)
     OB = Objective(60,1.3,'Olympus');
-    MI = Microscope(OB,180,'sC8-944','PhaseLIVE');
+    MI = Microscope(OB,180,'sC8-944','PhaseLAB');
 
 .. titre html
 

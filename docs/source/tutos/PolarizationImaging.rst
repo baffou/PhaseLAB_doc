@@ -6,12 +6,12 @@ In 2024, we combined a 4-polarization camera with a QLSI grating to achieve pola
 .. [#polarCGM] *Single-shot polarization imaging of vectorial metasurfaces using cross-grating wavefront microscopy*, J. Flamant, B. Marthy, K. Zangeneh Kamali, N. Ullberg, G. Demesy, P. Ferrand, M. Käll, G. Baffou, **ACS Nano**, accepted  (2026)  
 
 
-In this implementation, 4 interferograms are extracted from the raw camera image. For this purpose, the :ref:`splitColors <The_splitColors_method>` method is used:
+In this implementation, 4 interferograms are extracted from the raw camera image. For this purpose, the :ref:`splitPolars <The_splitPolars_method>` method is used:
 
 .. code-block:: matlab
 
     Itf0 = importItfRef(folder,MI);
-    Itf = Itf0.splitColors();
+    Itf = Itf0.splitPolars();
 
 If the input :matlab:`Itf0` is a list (an array) or :math:`N` |Interfero| objects, then the output :matlab:`Itf` is a :math:`N\times4` array of |Interfero| objects, where each column is one polarisation.
 
@@ -27,7 +27,7 @@ and just like :matlab:`Itf`, :matlab:`IM` is a :math:`N\times4` |ImageQLSI| obje
 Polarized light field imaging
 +++++++++++++++++++++++++++++
 
-Then, an object organizing the polarization can be created using the :ref:`CGMpolar <The_ImageQLSIpolar_Class>` constructor:
+Then, an object organizing the polarization can be created using the :ref:`ImageQLSIpolar <The_ImageQLSIpolar_Class>` constructor:
 
 .. code-block:: matlab
 
@@ -37,9 +37,9 @@ or equivalently the **ImageQLSI** method:
 
 .. code-block:: matlab
 
-    pIM = ImagePolar(IM);
+    pIM = ImageQLSIpolar(IM);
 
-The output ``pIM`` is an |ImageQLSIpolar| object. It proposes many methods to deals with a display polarized field.
+The output ``pIM`` is an |ImageQLSIpolar| object. It proposes many methods to deal with a display polarized field.
 
 An |ImageQLSIpolar| can be displayed using the :ref:`figure <The_figureJ_method>` method:
 
@@ -68,6 +68,10 @@ In microscopy, the polarized field usually comes from the fact the the object im
 
 An |ImageJonesMatrix| can be displayed using the *figure* method:
 
+.. code-block:: matlab
+
+    J.figure()
+    
 
 .. figure:: /images/JonesMatrixDisplay.png
    :width: 600

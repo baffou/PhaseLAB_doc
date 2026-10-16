@@ -12,7 +12,7 @@
       
         <p class="title">Description</p>
 
-    ``objList.figure()`` displays the images contained in the object via a GUI. ``objList`` can be a vector of **ImagePolar** objects.
+    ``objList.figure()`` displays the images contained in the object via a GUI. ``objList`` can be a vector of **ImageQLSIpolar** objects.
     |hr|
     
     Here is an overview of the interface:
@@ -21,7 +21,7 @@
         :width: 1200
         :align: center
 
-        GUI interface for display and study of ImagePolar objects
+        GUI interface for display and study of **ImageQLSIpolar** objects
 
     This GUI can display the wavefront images, either the averaged wavefront or the 4 wavefront images. In addition, it displays the ellipticity, the retardance or the dichroism image. For each type of image the limit values for display can be set.
 

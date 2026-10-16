@@ -1,4 +1,4 @@
-.. dropdown:: **im2T** |subTitle| Converts a 2-vector of ImagePolar objects into complex eigen-transmittance images. |/subTitle|
+.. dropdown:: **im2T** |subTitle| Converts a 2-vector of ImageQLSIpolar objects into complex eigen-transmittance images. |/subTitle|
 
     .. raw:: html
     
@@ -17,7 +17,7 @@
       
         <p class="title">Description</p>
 
-    ``T = obj.im2T()`` involves a ``(:,2)`` vector of ImagePolar objects ``obj``, the first column supposed to be associated to a left-handed circularly polarized (LCP) illumination, and the second to a right-handed circularly polarized (RCP) illumination. The method returns an |ImageTransmittance| object ``T``.
+    ``T = obj.im2T()`` involves a ``(:,2)`` vector of ImageQLSIpolar objects ``obj``, the first column supposed to be associated to a left-handed circularly polarized (LCP) illumination, and the second to a right-handed circularly polarized (RCP) illumination. The method returns an |ImageTransmittance| object ``T``.
 
     
     |hr|

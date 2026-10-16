@@ -53,7 +53,7 @@ Constructor
       W = readMatrix('data/W.txt');
 
       MI = Microscope(100);         % creates a microscope with 100x magnification
-      IL = Illumintation (530e-9);  % creates an illumination at lambda = 530 nm
+      IL = Illumination (530e-9);  % creates an illumination at lambda = 530 nm
 
       IM = ImageQLSI(T, W, MI, IL); % creates the ImageQLSI object
     

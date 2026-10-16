@@ -54,7 +54,7 @@ When further using :ref:`the QLSIprocess method <The_QLSIprocess_method>`, The I
 |hr|
 
 
-Finally, it is common to have several series of images within the same folder. For instance, when using |PhaseLIVE|, one can choose a prefix for the saved images. Here is a list of interferograms, all saved in the same folder, where the prefixes were successively *ITF* and *ITF2*:
+Finally, it is common to have several series of images within the same folder. For instance, when using |PhaseLAB|, one can choose a prefix for the saved images. Here is a list of interferograms, all saved in the same folder, where the prefixes were successively *ITF* and *ITF2*:
 
 | *ITF_0001.tif*
 | *ITF_0002.tif*

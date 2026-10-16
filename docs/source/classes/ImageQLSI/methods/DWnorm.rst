@@ -4,7 +4,7 @@
       
         <p class="title">Syntax</p>
     
-    .. code-block:: python
+    .. code-block:: matlab
 
         val = obj.DWnorm()
 

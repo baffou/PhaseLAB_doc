@@ -18,60 +18,37 @@ Properties
     * - name
       - type
       - description
-    * - ``T``
+    * - ``xx``
       - *double* array
       - Intensity image
-    * - ``OPD``
+    * - ``xy``
       - *double* array
-      - OPD image
-    * - ``OPDnm``
+      - Intensity image
+    * - ``yx``
       - *double* array
-      - OPD image in nanometers
-    * - ``DWx``
+      - Intensity image
+    * - ``yy``
       - *double* array
-      - OPD gradient along *x*
-    * - ``DWy``
-      - *double* array
-      - OPD gradient along *y*
-    * - ``Ph``
-      - *double* array
-      - Phase image
-    * - ``Nx``
-      - *double*
-      - Number of columns
-    * - ``Ny``
-      - *double*
-      - Number of rows
-    * - ``ItfFileName``
-      - *char*
-      - Name of the interferogram file from which the object originates.
-    * - ``channel``
-      - *char*
-      - Channel type. ``None`` by default. Can be ``'R','G','0','45','90','135','none'``.
-
-
-
-.. list-table:: Public properties
-    :widths: 30 30 30 100 
-    :header-rows: 1
-    :align: center
-
-    * - name
-      - type
-      - default
-      - description
-    * - ``Microscope``
-      - *Microscope*
-      - 
-      - Microscope object
+      - Intensity image
     * - ``Illumination``
       - *Illumination*
-      - 
-      - Illumination object
-    * - ``comment``
-      - *char*
-      - 
-      - Any comment on the image
+      - Illumination.
+    * - ``Microscope``
+      - *Microscope*
+      - Microscope setup
+    * - ``Nx``
+      - *Integer*
+      - Number of pixel along :math:`(x)`
+    * - ``Ny``
+      - *Integer*
+      - Number of pixel along :math:`(y)`
+    * - ``mat``
+      - (2,2,:,:) *double*
+      - 4-dimensional Jones matrix expression
+    * - ``T``
+      - *ImageTransmittance**
+      - Transmittance image
+
 
 
 .. include:: ImageJonesMatrix/ImageJonesMatrix_constructor.txt

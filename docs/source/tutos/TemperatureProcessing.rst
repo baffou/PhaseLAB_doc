@@ -32,7 +32,7 @@ One should start building a normal *Microscope* object, as in any |PhaseLAB| cod
     OB = Objective(60,1.3,'Olympus');
 
     %% BUILDING OF THE MICROSCOPE -- Microscope(OBJ,tl_f,Sid4model,software)
-    MI = Microscope(OB,180,'sC8-944','PhaseLIVE');
+    MI = Microscope(OB,180,'sC8-944','PhaseLAB');
     MI.refl = false;
 
     %% BUILDING OF THE ILLUMINATION -- IL = Illumination(lambda);

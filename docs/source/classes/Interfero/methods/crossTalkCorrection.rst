@@ -34,7 +34,7 @@
 
         % define the microscope
         CGcam=CGcamera('Silios_color');
-        MI=Microscope(100,200,CGcam,'PhaseLIVE');
+        MI=Microscope(100,200,CGcam,'PhaseLAB');
 
         % import the images
         Itf = importItfRef(folder,MI);

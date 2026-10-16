@@ -26,21 +26,6 @@ Constructor
 
     |hr|
 
-    .. raw:: html
-            
-        <p class="title">Examples</p>
-    
-    .. dropdown:: **Build an ImageQLSIpolar object by importing data**
-
-        .. code-block:: matlab
-
-            T = readMatrix('data/T.txt');
-            W = readMatrix('data/W.txt');
-
-            MI = Microscope(100);         % creates a microscope with 100x magnification
-            IL = Illumintation (530e-9);  % creates an illumination at lambda = 530 nm
-
-            IM = ImageQLSIpolar(T, W, MI, IL); % creates the ImageQLSIpolar object
             
 
     .. raw:: html

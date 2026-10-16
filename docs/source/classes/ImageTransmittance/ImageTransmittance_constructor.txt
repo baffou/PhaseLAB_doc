@@ -10,19 +10,26 @@ Constructor
     .. code-block:: matlab
         :class: custom-code
 
-        obj = ImageT()
-        obj = ImageT(TMP, HSD) 
-        obj = ImageT(TMP, HSD, W) 
-        obj = ImageT(TMP, HSD, W, T) 
+        obj = ImageTransmittance()
+        obj = ImageTransmittance(N)
+        obj = ImageTransmittance(to, te, phi, IL) 
+        obj = ImageTransmittance(______, Name, Value) 
 
     .. raw:: html
         
         <div class="title">Description</div>
 
-    ``obj = ImageT()`` creates an empty *ImageT* object.
+    ``obj = ImageTransmittance()`` creates a void *ImageTransmittance* object.
 
     |hr|
 
-    ``obj = ImageT(TMP, H, W, T)`` creates an *ImageT* object, ``TMP`` defining the temperature image, ``HSD`` the heat source density image, ``W`` the intitial waverfront/OPD image from which the temperaure and heat source density image have been calculated, and ``T`` the initial transmittance image. Each of these inputs is optional.
+    ``obj = ImageTransmittance(N)`` creates an array of ``N`` void transmittance objects.
 
-    In principle, this constructor should never be used. **ImageT** objects are automatically created by the :ref:`TMPprocess <The_TMPprocess_method>` method of the **ImageQLSI** class.
+    |hr|
+
+    ``obj = ImageTransmittance(to, te, phi, ME)`` creates a transmittance object from the specification of the eigen transmittances :math:`t_o` and  :math:`t_e`, the rotation angle :math:`\phi` and incident light as an |Illumination| object ``IL``.
+
+    |hr|
+
+    Optional values can be indicated, namely the birefringence angle, using the Name :matlab:`'phib'` and the dichroism angle using the Name :matlab:`'phib'`.
+

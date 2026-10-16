@@ -24,7 +24,7 @@ Constructor
 
     |hr|
 
-    ``obj = ImageJonesMatrix(img)`` creates a *ImageJonesMatrix* object ``obj`` an 2*2 double matrix ``mat``.
+    ``obj = ImageJonesMatrix(mat)`` creates a *ImageJonesMatrix* object ``obj`` from a 2*2 double matrix ``mat``.
 
     |hr|
 
@@ -32,7 +32,7 @@ Constructor
 
     |hr|
 
-    ``obj = ImageJonesMatrix(matStack)`` creates a **ImageJonesMatrix** object array ``obj`` from a :math:`2\times2\times Ny\times Nx` double array.
+    ``obj = ImageJonesMatrix(matStack)`` creates a **ImageJonesMatrix** object array ``obj`` from a :math:`2\times2\times Ny\times Nx` double array ``matStack``.
 
     |hr|
 

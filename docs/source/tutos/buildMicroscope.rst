@@ -58,7 +58,7 @@ Here are typical code lines to define the microscope:
 .. code-block:: matlab
 
     >>  OB = Objective(100,1.3,'Olympus');
-    >>  MI = Microscope(OB,'Nikon','Silios_mono','PhaseLIVE')
+    >>  MI = Microscope(OB,'Nikon','Silios_mono','PhaseLAB')
 
     MI = 
 
@@ -67,7 +67,7 @@ Here are typical code lines to define the microscope:
         Objective: [1×1 Objective]
         CGcam: [1×1 CGcamera]
         f_TL: 200
-        software: 'PhaseLIVE'
+        software: 'PhaseLAB'
         M: -111.1111
         pxSize: 4.9500e-08
         zo: 0
@@ -156,7 +156,7 @@ Summary
         .. code-block:: matlab
 
             IL = Illumination(630e-9);                               % define the illumination
-            MI = Microscope(100, 'Nikon', 'Silios_mono', 'PhaseLIVE');% define the microscope
+            MI = Microscope(100, 'Nikon', 'Silios_mono', 'PhaseLAB');% define the microscope
 
     .. tab:: Advanced setup construction
 
@@ -168,4 +168,4 @@ Summary
             relayLensZoom = 1.11;                              % set the zoom of the relay-lens
             CGcam = CGcamera(Cam, Grating, relayLensZoom);     % define the QLSI camera
             OB = Objective(100, 1.3, 'Olympus')                % define the objective lens
-            MI = Microscope(OB, 'Nikon', CGcam, 'PhaseLIVE');  % defines the microscope
+            MI = Microscope(OB, 'Nikon', CGcam, 'PhaseLAB');  % defines the microscope

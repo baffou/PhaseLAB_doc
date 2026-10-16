@@ -12,7 +12,7 @@
         Jxx = obj.c(1, 1);
         Jxy = obj.c(1, 2);
         Jyx = obj.c(2, 1);
-        Jxx = obj.c(2, 2);
+        Jyy = obj.c(2, 2);
 
     .. raw:: html
       

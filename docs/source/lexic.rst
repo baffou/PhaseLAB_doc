@@ -194,7 +194,7 @@ TABS
         .. code-block:: matlab
 
             IL = Illumination(630e-9);                               % define the illumination
-            MI = Microscope(100, 'Nikon', 'Silios_mono', 'PhaseLIVE');% define the microscope
+            MI = Microscope(100, 'Nikon', 'Silios_mono', 'PhaseLAB');% define the microscope
 
     .. tab:: Advanced setup construction
 
@@ -206,4 +206,4 @@ TABS
             relayLensZoom = 1.11;                              % set the zoom of the relay-lens
             CGcam = CGcamera(Cam, Grating, relayLensZoom);     % define the QLSI camera
             OB = Objective(100, 1.3, 'Olympus')                % define the objective lens
-            MI = Microscope(OB, 'Nikon', CGcam, 'PhaseLIVE');  % defines the microscope
+            MI = Microscope(OB, 'Nikon', CGcam, 'PhaseLAB');  % defines the microscope

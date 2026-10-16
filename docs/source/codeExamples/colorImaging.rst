@@ -13,7 +13,7 @@ Color imaging
         Cam = Camera('Silios');
         Gr = CrossGrating('Gamma',39e-6);
         CGcam = CGcamera(Cam,Gr,1.1931);
-        MI = Microscope(OB,200,CGcam,'PhaseLIVE');
+        MI = Microscope(OB,200,CGcam,'PhaseLAB');
 
         CGcam.setDistance(0.8e-3);
 

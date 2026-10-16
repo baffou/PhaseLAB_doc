@@ -23,16 +23,16 @@ Let us import the tiff interferograms, named *Itf.tiff* and *Ref.tiff*, located 
 Automatic import
 ----------------
 
-If the images have been created using a well-defined acquisition software, the software can be specified when :ref:`creating the microscope <The_Microscope_class>`. And the import of the images gets simplified, using the function |importItfRef|. For instance here, one assumes that the images located in the folder *data* have been acquired using |PhaseLIVE| (our home-made Matlab acquisition software, not included in |PhaseLAB|):
+If the images have been created using a well-defined acquisition software, the software can be specified when :ref:`creating the microscope <The_Microscope_class>`. And the import of the images gets simplified, using the function |importItfRef|. For instance here, one assumes that the images located in the folder *data* have been acquired using |PhaseLAB|:
 
 .. code-block:: matlab
     :linenos:
 
     folder = 'data';
-    MI = Microscope(100, 180, 'PhaseLIVE');
+    MI = Microscope(100, 180, 'PhaseLAB');
     Itf = importItfRef(folder, MI);
 
-In this example, in line 3, the interferogram is defined, and the reference image is automatically downloaded from the proper file, and incorporated within the ``Itf`` object (``Itf.Ref``). If several images are contained in the *data* folder, then they are all imported at once, and ``Itf`` becomes an object array.
+In this example, in line 3, the interferogram is defined, and the reference image is automatically loaded from the proper file, and incorporated within the ``Itf`` object (``Itf.Ref``). If several images are contained in the *data* folder, then they are all imported at once, and ``Itf`` becomes an object array.
 
 If the number of images is particularly large, like several 100s, then one can import only a link to the saved files, so that the RAM memory does not get saturated. The syntax is the following:
 
@@ -52,7 +52,7 @@ Also, one can import a subset of the images with the keywork *selection*:
 Line 1 imports the images 1, 10 and all the images from 20 to 50, while line 2 imports 1 image every 20 images (1, 21, 41, etc).
 
 
-Finally, it is common to have several series of images within the same folder. For instance, when using |PhaseLIVE|, one can choose a prefix for the saved images. Here is a list of interferograms, all saved in the same folder, where the prefixes were successively *ITF* and *ITF2*:
+Finally, it is common to have several series of images within the same folder. For instance, when using |PhaseLAB|, one can choose a prefix for the saved images. Here is a list of interferograms, all saved in the same folder, where the prefixes were successively *ITF* and *ITF2*:
 
 | *ITF_0001.tif*
 | *ITF_0002.tif*

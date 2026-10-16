@@ -34,7 +34,7 @@ Properties
    * - ``software``
      - *char*
      - 
-     - software used with the microscope ('PhaseLIVE', 'Sid4Bio')
+     - software used to acquire the interferograms
    * - ``zo``
      - *double*
      - 0

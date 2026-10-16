@@ -12,7 +12,7 @@ Numerical refocusing
 
         ME = Medium('water','glass');
         OB = Objective(100,0.7,'Olympus');
-        MI = Microscope(OB,200,'sC8-944','PhaseLIVE');
+        MI = Microscope(OB,200,'sC8-944','PhaseLAB');
         lambda = 531e-9;
         IL = Illumination(lambda,ME);
 
