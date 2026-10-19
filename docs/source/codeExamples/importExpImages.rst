@@ -9,7 +9,7 @@ Import experimental images
 
         %% code to import an experimental interferogram, process it, and display the QLSI images
 
-        MI  = Microscope(OB,180,'Silios_mono');% Create the Microscope object
+        MI  = Microscope(OB,180,'Makatea');    % Create the Microscope object
         IL  = Illumination(532e-9);            % Create the Illumination object
         Itf = imread('data/Itf.tiff');         % Import the main interferogram
         Ref = imread('data/Ref.tiff');         % Import the reference interferogram
@@ -20,5 +20,5 @@ Import experimental images
         IM.figure;                             % Display the images in a GUI (image below)
 
     .. figure:: /images/cellEx.png
-        :width: 500
+        :width: 600
         :align: center

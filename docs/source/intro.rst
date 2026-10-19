@@ -23,7 +23,7 @@ This technique belongs to the quantitative phase imaging (QPI) family, the *wave
    :align: center
 
 
-Such an association gives rise to a modified image of the camera, called an interferogram, featuring an array of tiny bright spots. The intensity and wavefront images are processed from the interferogram image.
+Such an association gives rise to a modified image of the camera, called an interferogram, featuring an array of tiny bright spots. The intensity and wavefront images are processed from the interferogram image. The information of the intensity image comes from the intensities of the spots, and the information of the wavefront image comes from the positions of the spots, which slightly move according to the incident, local wavefront gradient.
 
 .. image:: images/interferogram.png
    :width: 400
@@ -41,7 +41,7 @@ When a :abbr:`QLSI (quadriwave lateral shearing interferometry)` system is imple
 
 
 
-The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave lateral shearing interferometry)` images. It enables the processing of the interferogram into intensity and wavefront images, but also the simulations of interferograms, intensity, wavefront and :abbr:`OPD (optical path difference)` images from model objects, such as nanoparticles. Here is a review on CGM and QLSI:
+The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave lateral shearing interferometry)` images. It enables the processing of the interferogram into intensity and wavefront images, but also the simulations of interferograms, intensity, wavefront and :abbr:`OPD (optical path difference)` images from model objects, such as nanoparticles. Here is a review on CGM:
 
 .. figure:: images/CGMreviewCover.png
    :width: 200
@@ -56,7 +56,7 @@ The |PhaseLAB| **Matlab toolbox** is aimed to deal with :abbr:`QLSI (quadriwave 
 How to setup CGM experimentally?
 ---------------------------------
 
-There exist commercial QLSI cameras. All of them can be easily implemented in a microscope to perform CGM experiments. Here is for instance a movie of U2OS living cells processed with |PhaseLAB|:
+There exist commercial QLSI cameras (e.g. from Phasics SA and SILIOS technologies), or custom made devices. In any case, they can be easily implemented in a microscope to perform CGM experiments. Here is for instance a movie of U2OS living cells, acquired with a SILIOS camera (Makatea) processed with |PhaseLAB|:
 
 .. raw:: html
 
@@ -68,19 +68,20 @@ There exist commercial QLSI cameras. All of them can be easily implemented in a 
 |gr| U2OS cells |/gr|
 
 
-The 3 main functionalities of |PhaseLAB|
+The 4 main functionalities of |PhaseLAB|
 ----------------------------------------
 
-|PhaseLAB| can be used for 3 main purposes:
+|PhaseLAB| can be used for 4 main purposes:
 
 1. **Convert** experimental :abbr:`QLSI (quadriwave lateral shearing interferometry)` interferogram images into images of interest, namely, wavefront, intensity, wavefront gradients, etc. **Process and do measurements** on these images using code lines, or using a :abbr:`GUI (graphical user interface)` interface (crop, plot crosscuts, filter, flatten, numerically refocus, measure dry masses, export, make movie, etc).
 2. **In silico QLSI**, that is simulate :abbr:`QLSI (quadriwave lateral shearing interferometry)` intensity and wavefront/phase images of nanoparticles acquired with a specific microscope.
 3. From the **In silico QLSI** simulation, compute the theoretical interferogram recorded by the camera in the presence of the :abbr:`QLSI (quadriwave lateral shearing interferometry)` grating, and process it as if it were an experimental interferogram.
+4. **Live CGM imaging** using a graphical user interface (GUI).
 
-The 3 functionalities are sketched below:
+The 4 functionalities are sketched below:
 
 .. image:: images/functionalities.png
-   :width: 400
+   :width: 600
    :align: center
 
 |br|   

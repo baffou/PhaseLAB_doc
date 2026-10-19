@@ -14,7 +14,7 @@ The images can be displayed using any standard function of Matlab. We recommend 
     figure
     imagesc(IM.OPD)
     set(gca,'DataAspectRatio',[1 1 1]) % avoids image distorsion
-    colormap(Sepia)
+    colormap(sepia)
     colorbar
 
 To avoid repeating all these code lines each time one wants to display the OPD images, all these code lines have been embeddedd within the ``imageph`` function:
@@ -48,6 +48,8 @@ Other similar functions are defined, each using a different colorscale, namely
      - hot
    * - ``imagefl``
      - invertedGreen()
+   * - ``imagePr``
+     - Pradeep
 
 
 
@@ -124,6 +126,7 @@ To use any of them, use the ``colormap`` command:
 
 .. code-block:: matlab
 
+    % example:
     colormap(Pradeep)
 
 where the input is simply the name of the desired color map.

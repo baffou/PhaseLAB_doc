@@ -58,27 +58,28 @@ Here are typical code lines to define the microscope:
 .. code-block:: matlab
 
     >>  OB = Objective(100,1.3,'Olympus');
-    >>  MI = Microscope(OB,'Nikon','Silios_mono','PhaseLAB')
+    >>  MI = Microscope(OB,'Nikon','Makatea','PhaseLAB')
 
     MI = 
 
     Microscope with properties:
 
         Objective: [1×1 Objective]
-        CGcam: [1×1 CGcamera]
-        f_TL: 200
-        software: 'PhaseLAB'
-        M: -111.1111
-        pxSize: 4.9500e-08
-        zo: 0
-        T0: []
+            CGcam: [1×1 CGcamera]
+             f_TL: 200
+         software: 'PhaseLAB'
+                M: -111.1111
+           pxSize: 5.5000e-08
+               zo: 0
+               T0: []
+             refl: 0
 
 An |Objective| object is firstly defined. It enables the specification of the magnification, the numerical aperture and the objective brand. The 3rd (optional) input is the objective brand. If not specified, the default value is :matlab:`'Olympus'`.
 
 
 Then, a |Microscope| object is defined. It takes an |Objective| object as a first input, the microscope brand (or the focal length of the tube lens) as the second input, and optionally the name of the QLSI camera and the software used to acquire the images.
 
-Note that the magnification of the microscope is negative. It is normal as a microscope inverts an image. It also equals -111.1111 instead of -100. This is because we specified an Olympus objective on a Nikon microscope, and this is what happens when you proceed this way experimentally, because an olympus objective assumes a tube lens with a focal length of 180 mm, while a Nikon microscope has a 200-mm tube lens. The image is thus further magnified.|PhaseLAB| takes this into account.
+Note that the magnification of the microscope is negative. It is normal as a microscope inverts an image. It also equals -111.1111 instead of -100. This is because we specified an Olympus objective on a Nikon microscope, and this is what happens when you proceed this way experimentally, because an olympus objective assumes a tube lens with a focal length of 180 mm, while a Nikon microscope has a 200-mm tube lens. The image is thus further magnified.
 
 For more information on how to build the microscope, see :ref:`The_Microscope_class` section.
 
@@ -98,8 +99,8 @@ The QLSI camera is represented by a |CGcamera| object, and is contained within t
         Camera: [1×1 Camera]
             RL: [0×0 RelayLens]
             CG: [1×1 CrossGrating]
-        fileName: 'Silios_mono'
-            CGpos: 7.5000e-04
+        fileName: 'Makatea'
+            CGpos: 7.44000e-04
             dxSize: 5.5000e-06
             zeta: 3.0000
             zoom: 1
@@ -119,17 +120,17 @@ Many parameters define a QLSI camera. But no need to enter all of them, one by o
     * - |c| sC8-940 |/c|
       - SID4-sC8 camera we own.
     * - |c| Sid4Element-Sona |/c|
-      - Relay lens from Phasics, when associated with a Sona camera
+      - Relay lens from Phasics, when associated with a Sona (Andor) camera
     * - |c| Sid4Element |/c|
-      - Relay lens from Phasics, when associated with a Zyla camera
-    * - |c| Silios_mono |/c|
-      - Camera from Silios
+      - Relay lens from Phasics, when associated with a Zyla 5.5 (Andor) camera
+    * - |c| Makatea |/c|
+      - Makatea camera from SILIOS Technologies
 
 Implementing a QLSI camera is done when building the microscope, by specifying a 3rd input to the constructor with the name of the QLSI camera:
 
 .. code-block:: matlab
 
-    MI = Microscope(OB,'Nikon','Silios_mono')
+    MI = Microscope(OB,'Nikon','Makatea')
 
 
 If your camera is not in the list, you can build your own QLSI camera (i.e., :matlab:`CGcam` object) step by step, this way:

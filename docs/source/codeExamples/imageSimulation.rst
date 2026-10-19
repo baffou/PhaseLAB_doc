@@ -14,7 +14,7 @@ Image simulation
 
         ME = Medium(n);
         OB = Objective(200,1.3,'Olympus');
-        CGcam = CGcamera('Silios_mono');
+        CGcam = CGcamera('Makatea');
         MI = Microscope(OB,180,CGcam);
         IL = Illumination(lambda,ME);
 

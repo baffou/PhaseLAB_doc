@@ -14,7 +14,7 @@ Make a movie
 
         ME = Medium(n);
         OB = Objective(100,1.3,'Olympus');
-        CGcam = CGcamera('Silios_mono');
+        CGcam = CGcamera('Zyla5.5','F03',1.11);
         MI = Microscope(OB,180,CGcam);
         IL = Illumination(lambda,ME,1,[1 1i]); % circularly polarized illumination
 
@@ -23,7 +23,7 @@ Make a movie
 
         DI = repmat(DI0,12,1);
 
-        R=3e-6;                   % radius of the ring
+        R = 3e-6;                   % radius of the ring
 
         for ii=1:12
             DI(ii)=DI(ii).moveTo('x',R*cos(2*pi*ii/12),'y',R*sin(2*pi*ii/12));
@@ -37,18 +37,39 @@ Make a movie
         IM = ImageEM(Nf);
         for iz = 1:Nf             % positioning of the Nf nanoparticles
             MI.zo = focus(iz);
-            IM(iz) = imaging(DI,IL,MI,Npx);
+            IM(iz) = imaging(DI,MI,"Npx",Npx);
         end
 
-        IM.crop(Size=300);
+        IM.crop(Size=300,Center='auto');
 
-        IM.makeMoviedx('IM.avi','theta',0,'phi',0,'rate',2,'zrange',[-10 10])
-    
+        hfig = dynamicFigure("ph",IM);
+        dynamicMovie(hfig,"dynamicMovie.mp4")
+
+
 
     .. raw:: html
 
         <video width="560" height="473" autoplay loop muted>
-            <source src="http://guillaume.baffou.com/movies/NPcorral.mp4" type="video/mp4">
+            <source src="http://guillaume.baffou.com/movies/dynamicMovie.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+    One can also use the :matlab:`makeMoviedx` method to make a movie of the OPD image with a nice 3D rendering.
+    
+    .. code:: matlab
+
+
+        IM.makeMoviedx('IM.avi','theta',0,'phi',0,'rate',2,'zrange',[-10 10])
+
+
+
+
+    .. raw:: html
+
+        <video width="560" autoplay loop muted>
+            <source src="http://guillaume.baffou.com/movies/makeMoviedx.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
 

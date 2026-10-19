@@ -1,7 +1,7 @@
 Import experimental interferograms
 ==================================
 
-Experimental images (interferograms) are imported as matrices, and embedded within *Interfero* objects. At least two images need to be imported: the *main* interferogram and the *reference* interferogram.
+Experimental images (interferograms) are imported as matrices, and embedded within *Interfero* objects. At least two images need to be imported: the *object* interferogram and the *reference* interferogram.
 
 Manual import
 -------------
@@ -11,7 +11,7 @@ Let us import the tiff interferograms, named *Itf.tiff* and *Ref.tiff*, located 
  .. code-block:: matlab
     :linenos:
 
-    Im = imread('data/Itf.tiff');  % load the main interferogram
+    Im = imread('data/Itf.tiff');  % load the object interferogram
     Im0 = imread('data/Ref.tiff'); % load the reference interferogram
 
     % Create the Interfero object
@@ -23,7 +23,7 @@ Let us import the tiff interferograms, named *Itf.tiff* and *Ref.tiff*, located 
 Automatic import
 ----------------
 
-If the images have been created using a well-defined acquisition software, the software can be specified when :ref:`creating the microscope <The_Microscope_class>`. And the import of the images gets simplified, using the function |importItfRef|. For instance here, one assumes that the images located in the folder *data* have been acquired using |PhaseLAB|:
+If the images have been created using a well-defined acquisition software, the software can be specified when :ref:`creating the microscope <The_Microscope_class>`. And importing the images gets simplified, using the function |importItfRef|. For instance here, one assumes that the images located in the folder *data* have been acquired using |PhaseLAB|:
 
 .. code-block:: matlab
     :linenos:

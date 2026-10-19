@@ -47,16 +47,17 @@ The toolbox is accessible at `github.com/baffou/PhaseLAB <https://github.com/baf
     :maxdepth: 2
     :caption: Tutorials
 
-    buildMicroscope     <tutos/buildMicroscope>
-    importImages        <tutos/importImages>
-    processImages       <tutos/processImages>
-    displayImages       <tutos/displayImages>
-    BackgroundFlattering    <tutos/BackgroundFlattering>
-    inSilico            <tutos/inSilico>
-    multiColorImaging   <tutos/multiColorImaging>
-    TemperatureProcessing   <tutos/TemperatureProcessing>
-    PolarizationImaging <tutos/PolarizationImaging>
+    Build a microscope     <tutos/buildMicroscope>
+    Import images        <tutos/importImages>
+    Process Images       <tutos/processImages>
+    Display Images       <tutos/displayImages>
+    Background flattening    <tutos/BackgroundFlattening>
+    In Silico            <tutos/inSilico>
+    MultiColor Imaging   <tutos/multiColorImaging>
+    Temperature processing   <tutos/TemperatureProcessing>
+    Polarization imaging <tutos/PolarizationImaging>
     GUI                 <tutos/GUI>
+    Live imaging        <tutos/liveImaging>
 
 .. toctree::
     :maxdepth: 2

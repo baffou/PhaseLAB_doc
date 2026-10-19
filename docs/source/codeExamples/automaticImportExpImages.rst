@@ -9,12 +9,9 @@ Auto import experimental images
 
         %% code to import an experimental interferogra
 
-        MI = Microscope(OB,180,'Silios_mono','PhaseLAB'); % Create the Microscope object
-                                                           % and tell the imaging software
+        MI = Microscope(OB,180,'sC8-830','PhaseLAB'); % Create the Microscope object
+                                                      % and tell the imaging software
         IL = Illumination(532e-9);          % Create the Illumination object
-        Itf = imread('data/Itf.tif');       % Import the main interferogram
-        Ref = imread('data/Ref.tif');       % Import the reference interferogram
         Im = importItfRef('data', MI);      % Import the interferogram and their references
-
 
     This code knows how to import the images, and where to find the reference images, because the imaging software was indicated (here :matlab:`'PhaseLAB'`).
